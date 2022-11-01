@@ -32,3 +32,12 @@ git push -u origin main
 
 ## 4. check results
 at: https://avnewman.github.io/
+
+
+# Notes:
+* Jekyll instructions
+https://jekyllrb.com/docs/usage/
+
+* Directory structure
+https://jekyllrb.com/docs/structure/
+
