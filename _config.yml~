@@ -32,7 +32,8 @@ github_username:  avnewman
 # Build settings
 theme: minima
 plugins:
-  - jekyll-feed
+  - jekyll-include-cache   # avn added
+    #  - jekyll-feed   # avn commented
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -41,3 +41,5 @@ https://jekyllrb.com/docs/usage/
 * Directory structure
 https://jekyllrb.com/docs/structure/
 
+* changed theme
+to [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes#readme)

@@ -30,9 +30,11 @@ twitter_username: Bent_Earth
 github_username:  avnewman
 
 # Build settings
-theme: minima
+# theme: minima   # avn commented
+remote_theme: "mmistakes/minimal-mistakes@4.24.0" #avn added
 plugins:
-  - jekyll-feed
+  - jekyll-include-cache   # avn added
+    #  - jekyll-feed   # avn commented
 
 # Exclude from processing.
 # The following items will not be processed, by default.
