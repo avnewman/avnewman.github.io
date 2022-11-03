@@ -21,7 +21,7 @@ title_separator          : "_"
 subtitle                 : "Research, Education, and Community activities in GeoHazards" # site tagline that appears below site title in masthead
 name                     : "Andrew Newman"
 description              : "Professional website for research, education, and community activities related to Andrew Newman's research group's efforts towards understanding Earth processes associated with geologic hazards."
-url                      : https://avnewman.github.io"
+url                      : "https://avnewman.github.io"
 baseurl                  : "/"  # the subpath of your site, e.g. "/blog"
 repository               : "avnewman/avnewman.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/PacificProgram2020-TongariroAlpineCrossing-20200117_132709_small.jpg"  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
