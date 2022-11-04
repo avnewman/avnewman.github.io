@@ -86,13 +86,15 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : /assets/images/PacificProgram2020-TongariroAlpineCrossing-20200117_132709_small.jpg # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : Person # Person or Organization (defaults to Person)
+  name                   : "Andrew Newman" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+  - "https://twitter.com/Bent_Earth"
+  - "https://www.linkedin.com/in/andrew-newman-6811a2124/"
 
 # Analytics
 analytics:
@@ -104,25 +106,24 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Andrew Newman"
+  avatar           : "/assets/images/AVN_NZ_20200208_151235.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Geophysicist/Professor"
+  location         : "Atlanta, GA, USA"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
+      url: "mailto:anewman(at)gatech[dot]edu"
+#    - label: "Website"
+#      icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-      # url: "https://facebook.com/"
+      url: "https://twitter.com/Bent_Earth"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/avnewman"
     #- label: "Instagram"
     #  icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -132,10 +133,10 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: "https://twitter.com/Bent_Earth"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/avnewman"
     #- label: "GitLab"
     #  icon: "fab fa-fw fa-gitlab"
       # url:
@@ -215,7 +216,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/New_York https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -285,6 +286,13 @@ defaults:
       comments:  false # true
       share: true
       related: true
-      show_date: false
+      show_date: true
       date_format: "%Y-%m-%d"
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+
 
