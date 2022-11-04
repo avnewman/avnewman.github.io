@@ -1,12 +1,18 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Research"
+    url: research/
+    description: "Newman Crew Research"
+  - title: "Teaching"
+    url: teaching/
+    description: "Classes and Activities lead by Newman"
+  - title: "Crew"
+    url: crew/
+    description: "Students, PostDocs, and other Lab-associated personnel"
+  - title: "Publications"
+    url: pubs/
+    description: "Materials publsihed by the Newman Crew"
+
+
+sidebar:
+  nav: "main"
