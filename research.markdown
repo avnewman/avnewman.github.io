@@ -4,15 +4,21 @@ title: Research Activities
 permalink: /research/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Links to some of the Newman Crews ongoing and past research. Please visit the [Publications](/pubs/) link to see primarily peer-reviewed products.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+## Research Projects
+* [Near-Trench Deformation along Alaskan and Cascadian Megathrusts](https://www.seafloorgeodesy.org/commexp)
+* [Constraining deformation across the seismic cycle along the Nicoya Megathrust](https://nicoya.eas.gatech.edu/)
+* [Rapid characterization of earthquakee energy](http://geophysics.eas.gatech.edu/people/anewman/research/RTerg/)
+* [Deformation at Santorini Caldera](http://geophysics.eas.gatech.edu/people/anewman/research/Santorini.html)
+* Transient Tectonics of the Kivu Rift System in Rwanda (soon.) 
+* Machine Learning for Earthquake Source Characterization and Association (soon.)
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## Community Activities
+* [Development of seafloor geodetic resources](https://seafloorgeodesy.org)
+* [Georgia educatational seismic network](http://geophysics.eas.gatech.edu/GTEQ/)
+* [Open-Source kinematic modeling software: GTDef (Matlab-based)](https://github.com/avnewman/GTDef)
+* [Open-Source earthquake energy software: RTergPy (Python-based)](https://github.com/avnewman/rtergpy)
+* [Cooperation in SZ4D Initiative](https://www.sz4d.org)
 
-
-[jekyll-organization]: https://github.com/jekyll
+## From the Field

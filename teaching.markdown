@@ -3,16 +3,19 @@ layout: single
 title: Teaching and other Educational Activities
 permalink: /teaching/
 ---
+Below are links to courses, and training modules developed and taught
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## Official Courses and Seminars
+* [Earth Processes (Majors and Honors): EAS 2600](http://geophysics.eas.gatech.edu/anewman/classes/EarthProcesses) 
+* [Introduction to Geophysics: EAS 3610](http://geophysics.eas.gatech.edu/anewman/classes/Geophysics) 
+* [Earthquake Physics: EAS 4316/6316](http://geophysics.eas.gatech.edu/anewman/classes/EQPhysics)
+* [Structural Geology and Continuum Mechanics: EAS 4200/6320](http://geophysics.eas.gatech.edu/anewman/classes/Structure) 
+* [Geodynamics: EAS 6312](http://geophysics.eas.gatech.edu/anewman/classes/Geodynamics)
+* [Modern Geodetic Methods: EAS 8803avn](http://geophysics.eas.gatech.edu/anewman/classes/MdrnGeodMethds) 
+* [Geophysics Seminar](http://geophysics.eas.gatech.edu/Classes/Seminar)
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+## Mini-Courses and Labs
+* [Introduction to Unix](http://geophysics.eas.gatech.edu/anewman/classes/Intro_Unix)
+* [Introduction to Generic Mapping Tools (GMT)](http://geophysics.eas.gatech.edu/anewman/classes/Intro_GMT)
+* [Introduction to PyGMT](https://github.com/avnewman/pyGMT-Tutorial)
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
