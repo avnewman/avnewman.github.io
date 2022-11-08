@@ -12,7 +12,7 @@
 
 #theme                  : "minimal-mistakes-jekyll" # for Ruby Gem version
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dirt" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dirt-avn" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -108,18 +108,24 @@ analytics:
 author:
   name             : "Andrew Newman"
   avatar           : "/assets/images/AVN_NZ_20200208_151235.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Geophysicist/Professor"
-  location         : "Atlanta, GA, USA"
-  email            :
+  bio              : "Geophysics Professor and Undergrad Coordinator"
+  location         : 
+  email            : 
   links:
+    - label: "Georgia Tech"
+      icon: "fa-solid fa-fw fa-building-columns"
+      url: "https://www.gatech.edu"
+    - label: "Earth & Atmo Sci."
+      icon: "fas fa-solid fa-map-pin"
+      url: "https://drive.google.com/open?id=1qa-9kC-DHM7m1NvjHtyaUDZSVLJmZhjS&usp=sharing"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:anewman(at)gatech[dot]edu"
-#    - label: "Website"
-#      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "mailto:anewman_at_gatech_dot_edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://avnewman.github.io"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-twitter"
       url: "https://twitter.com/Bent_Earth"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"

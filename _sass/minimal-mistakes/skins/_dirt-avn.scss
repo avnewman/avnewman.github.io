@@ -7,10 +7,13 @@
 $background-color: #ffffff !default;
 //$text-color: #343434 !default;
 $text-color: #402020 !default;
-$muted-text-color: #8e8b82 !default;
+//$muted-text-color: #8e8b82 !default;
+$muted-text-color: mix( $text-color, #fff, 60%)  !default;
 $primary-color: $text-color !default;
-$border-color: #e9dcbe !default;
-$footer-background-color: #e9dcbe !default;
+//$border-color: #e9dcbe !default;
+$border-color: $text-color !default;
+//$footer-background-color: #e9dcbe !default;
+$footer-background-color: #000 !default;
 $link-color: $text-color !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: $text-color !default;

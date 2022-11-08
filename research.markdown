@@ -11,8 +11,8 @@ Links to some of the Newman Crews ongoing and past research. Please visit the [P
 * [Constraining deformation across the seismic cycle along the Nicoya Megathrust](https://nicoya.eas.gatech.edu/)
 * [Rapid characterization of earthquakee energy](http://geophysics.eas.gatech.edu/people/anewman/research/RTerg/)
 * [Deformation at Santorini Caldera](http://geophysics.eas.gatech.edu/people/anewman/research/Santorini.html)
-* Transient Tectonics of the Kivu Rift System in Rwanda (soon.) 
-* Machine Learning for Earthquake Source Characterization and Association (soon.)
+* Transient tectonics of the Kivu Rift System in Rwanda (soon.) 
+* Machine learning for earthquake source characterization and association (soon.)
 
 ## Community Activities
 * [Development of seafloor geodetic resources](https://seafloorgeodesy.org)
