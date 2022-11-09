@@ -107,15 +107,15 @@ analytics:
 # Site Author
 author:
   name             : "Andrew Newman"
-  avatar           : "/assets/images/AVN_NZ_20200208_151235.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/AVN_NZ_20200208_151235_sm.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Geophysics Professor and Undergrad Coordinator"
   location         : 
   email            : 
   links:
-    - label: "Georgia Tech"
-      icon: "fa-solid fa-fw fa-building-columns"
-      url: "https://www.gatech.edu"
-    - label: "Earth & Atmo Sci."
+    - label: "EAS @ GT"
+      icon: "fas fa-solid fa-school"
+      url: "https://www.eas.gatech.edu"
+    - label: "Building"
       icon: "fas fa-solid fa-map-pin"
       url: "https://drive.google.com/open?id=1qa-9kC-DHM7m1NvjHtyaUDZSVLJmZhjS&usp=sharing"
     - label: "Email"

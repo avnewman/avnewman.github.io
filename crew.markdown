@@ -15,7 +15,7 @@ Below are current, and prior students, postdocs, and visiting scientists associa
 * [Louisa Barama](https://www.linkedin.com/in/louisa-barama/) (in PhD Program 2017 -)
 
 ## Past
-* [Ethan Losasso](https://www.linkedin.com/in/ethan-losasso-b94a2a22b/) (BS-planned, 2021) 
+* [Ethan Losasso](https://www.linkedin.com/in/ethan-losasso-b94a2a22b/) (BS-planned, 2023) 
 * [Dr. Boyan Liu](https://www.researchgate.net/profile/boyan-Liu) (visiting 2019)
 * [Prof. Tiegan Hobbs](http://tieganhobbs.com/) (PhD, Mar. 2019)
 * [Dr. Amy Williamson](https://www.linkedin.com/in/amy-williamson-66481a71/) (PhD, Mar. 2018)
