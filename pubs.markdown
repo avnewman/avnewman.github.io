@@ -8,8 +8,8 @@ Below is a running list of [peer-reviewed](#peer-reviewed), and [other](#other) 
 
 ## Peer-reviewed
 
-1. Barama,L., Z. Peng, A. V. Newman, J. Williams; GTUNE: An Assembled Global Seismic Dataset of Underground 
-	Nuclear Test Blasts. <i>Seismological Research Letters</i> 2022;; 93 (6): 3514–3523. <a  href="https://doi.org/10.1785/0220220036">doi.org/10.1785/0220220036</a>
+1. Barama, L., Z. Peng, A. V. Newman, J. Williams (2022), GTUNE: An Assembled Global Seismic Dataset of Underground 
+	Nuclear Test Blasts, <i>Seismological Research Letters</i>, 93 (6): 3514–3523. <a  href="https://doi.org/10.1785/0220220036">doi.org/10.1785/0220220036</a>
 	<br><a href="http://geophysics.eas.gatech.edu/anewman/research/papers/Barama_etal_SRL_2022.pdf">PDF</a>
 
 1. Lifton, Z. M., J. Lee, K. L. Frankel, A. V. Newman, J. M. Schroeder, M. T. Heizler (2020), 
@@ -290,6 +290,17 @@ Below is a running list of [peer-reviewed](#peer-reviewed), and [other](#other) 
 	<br><a href="http://geophysics.eas.gatech.edu/anewman/research/papers/Newman_Okal_JGR_1998.pdf">PDF</a>
 
 ## Other:
+
+1. Newman, A., N. Bartlow, D. Schmidt, D. Charlevoix, J. Foster, B. Haines, E. Araki, R.
+	Bürgmann, W. Chadwick, J. Gomberg, D. Melgar, L. Wallace, M. Wei, and W. Wilcock
+	(2021), “Future Directions in Seafloor Geodesy 2021 Community Workshop”, held April
+	6-9, 2021.\
+	[Web](https://www.seafloorgeodesy.org/future-directions) and [PDF](https://drive.google.com/file/d/1Smcd5a0EqOlSOSZeVHSqJNQij0XpF9Gx/view?usp=sharing)
+
+1. 	Newman, A., N. Barlow, B. Brooks, D. Charlevoix, J. Foster, D. Schmidt, S. Webb, M.
+	Zumberge (2022), “Workshop on the Alaska and Cascadia Seafloor Geodetic Community
+	Experiment”, held May 2-6, 2022.\
+	[Web](https://www.seafloorgeodesy.org/post/workshop-on-the-alaska-and-cascadia-seafloor-geodetic-community-experiment) and [PDF](https://drive.google.com/file/d/10I9kdZeIepyPUAQA130LDgvr6KYwc9bK/view?usp=sharing)
 
 1. Freymeuller, J. T., R. Bendick, A. Borsa, A. V. Newman (Eds.),
 	      "Measuring the Restless Earth: Grand Challenges in Geodesy", 
