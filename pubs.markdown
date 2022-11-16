@@ -291,6 +291,11 @@ Below is a running list of [peer-reviewed](#peer-reviewed), and [other](#other) 
 
 ## Other:
 
+1. Hilley, G. E. (ed.), Brodsky, E. E., Roman, D., Shillington, D. J., Brudzinski, M., Behn, 
+	M. Tobin, H. and the SZ4D RCN (2022). 
+	SZ4D Implementation Plan. Stanford Digital Repository. 
+	https://doi.org/10.25740/hy589fc7561\
+	[PDF](https://purl.stanford.edu/hy589fc7561)	
 1. Newman, A., N. Bartlow, D. Schmidt, D. Charlevoix, J. Foster, B. Haines, E. Araki, R.
 	Bürgmann, W. Chadwick, J. Gomberg, D. Melgar, L. Wallace, M. Wei, and W. Wilcock
 	(2021), “Future Directions in Seafloor Geodesy 2021 Community Workshop”, held April
