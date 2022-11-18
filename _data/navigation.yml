@@ -11,7 +11,7 @@ main:
     description: "Students, PostDocs, and other Lab-associated personnel"
   - title: "Publications"
     url: pubs/
-    description: "Materials publsihed by the Newman Crew"
+    description: "Materials published by the Newman Crew"
 
 
 sidebar:
