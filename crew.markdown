@@ -12,7 +12,7 @@ Below are current, and prior students, postdocs, and visiting scientists associa
 * [Baylee MacBeth](https://www.linkedin.com/in/baylee-macbeth-194508202/) (Undergrad Research)
 * [Leah Jaffe](https://www.linkedin.com/in/leah-jaffe-1371a0128/) (2022 visiting IRIS Undergrad Intern)
 * [Derrick Murekezi](https://www.linkedin.com/in/derrickmurekezi/) (in PhD Program 2019 -)
-* [Louisa Barama](https://www.linkedin.com/in/louisa-barama/) (in PhD Program 2017 -)
+* [Dr. Louisa Barama](https://www.linkedin.com/in/louisa-barama/) (PhD, 2022)
 
 ## Past
 * [Ethan Losasso](https://www.linkedin.com/in/ethan-losasso-b94a2a22b/) (BS-planned, 2023) 
