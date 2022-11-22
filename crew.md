@@ -3,6 +3,8 @@ layout: single
 title: Newman Crew
 permalink: /crew/
 classes: wide
+sidebar:
+  nav: "main"
 
 gallerytop:
   - url: /assets/images/student/Derrick_20200117_134953.jpg

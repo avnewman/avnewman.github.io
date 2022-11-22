@@ -1,5 +1,8 @@
 # main links
 main:
+  - title: "About"
+    url: about/
+    description: "What we do"
   - title: "Research"
     url: research/
     description: "Newman Crew Research"

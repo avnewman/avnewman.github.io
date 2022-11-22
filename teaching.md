@@ -2,6 +2,8 @@
 layout: single
 title: Teaching and other Educational Activities
 permalink: /teaching/
+sidebar:
+  nav: "main"
 ---
 Below are links to courses, and training modules developed and taught.  
 

@@ -2,6 +2,8 @@
 layout: single
 title: Research Activities
 permalink: /research/
+sidebar:
+  nav: "main"
 ---
 
 Links to some of the Newman Crews ongoing and past research. Please visit the [Publications](/pubs/) link to see primarily peer-reviewed products.

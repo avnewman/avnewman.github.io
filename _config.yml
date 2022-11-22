@@ -302,3 +302,8 @@ defaults:
 
 
 github: [metadata] 
+
+search: true
+lunr: 
+   search_within_pages: true
+   search_full_content: true

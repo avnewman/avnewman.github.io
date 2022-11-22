@@ -2,6 +2,8 @@
 layout: single
 title: Publications
 permalink: /pubs/
+sidebar:
+  nav: "main"
 ---
 
 Below is a running list of [peer-reviewed](#peer-reviewed), and [other](#other) publications from our group.

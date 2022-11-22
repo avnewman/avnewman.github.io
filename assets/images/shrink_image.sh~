@@ -8,6 +8,6 @@ INP_PRE="${INP%.*}"
 INP_EXT="${INP##*.}"
 OUT=${INP_PRE}_sm.${INP_EXT}
 
-echo "Shrinking $INP to roughly $GEOM and savin it as  $OUT"
+echo "Shrinking $INP to roughly $GEOM as $OUT"
 
 convert $INP -geometry $GEOM  $OUT

@@ -2,6 +2,7 @@
 
 INP=$1
 GEOM='1000x1000'
+GEOM='500x500'
 if [ $2 ] ; then GEOM=$2 ; fi
 
 INP_PRE="${INP%.*}"
