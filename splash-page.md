@@ -1,5 +1,5 @@
 ---
-title: "Newman Group Research"
+title: "Newman Group"
 layout: splash
 permalink: index.html
 #date: 2016-03-23T11:48:41-04:00
@@ -13,7 +13,7 @@ header:
   #caption: "Photo credit: me"
 excerpt: "Geophysical research applied to geohazards"
 intro: 
-  - excerpt: 'We research and educate around fundamental earth processes that drive some geologic hazards.  Our primary focus is on earthquake and volcanic behavior as observed by ground shaking and minute ground deformation' 
+  - excerpt: 'We research and educate around fundamental earth processes that drive some geologic hazards.  Our primary focus is on earthquake and volcanic behavior as observed by ground shaking and ground deformation' 
 feature_row:
   - image_path: /assets/images/student/Crew_20190419_144509_sm.jpg
     title: "Crew"
