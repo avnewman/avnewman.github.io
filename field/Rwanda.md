@@ -7,19 +7,19 @@ classes: wide
 
 2022gallery:
   - url: /assets/images/field/Rwanda/20220803_105252.jpg
-    image_path: /assets/images/field/Rwanda/20220803_105252.jpg
+    image_path: /assets/images/field/Rwanda/20220803_105252_sm.jpg
     alt: "Tea Plantation"
     title: "Beautiful Tea Plantations cover many of the hills in this lush environment"
   - url: /assets/images/field/Rwanda/20220803_131527.jpg
-    image_path: /assets/images/field/Rwanda/20220803_131527.jpg
+    image_path: /assets/images/field/Rwanda/20220803_131527_sm.jpg
     alt: "Northing Antenna"
     title: "GT Grad Student Derrick Murekezi is positioning an antenna for a continuous GNSS site (Station:BYAH)" 
   - url: /assets/images/field/Rwanda/20220802_171155.jpg
-    image_path: /assets/images/field/Rwanda/20220802_171155.jpg
+    image_path: /assets/images/field/Rwanda/20220802_171155_sm.jpg
     alt: "Drilling Pin"
     title: "GT Grad Student Derrick Murekezi drilling hole for the installation of GNSS mast (Station:RUBO)"
   - url: /assets/images/field/Rwanda/20220802_180337.jpg
-    image_path: /assets/images/field/Rwanda/20220802_180337.jpg
+    image_path: /assets/images/field/Rwanda/20220802_180337_sm.jpg
     alt: "Copious Field Logging"
     title: "GT Grad Student Derrick Murekezi writing logsheets associated with the installation of a new continuous GNSS Station (Station:RUBO)"
   - url: /assets/images/field/Rwanda/19127.jpg
@@ -31,7 +31,7 @@ classes: wide
     alt: "Andy Newman and EAIFR Student discussing GNSS methods"
     title: "more GNSS Discussion"
   - url: /assets/images/field/Rwanda/20220806_132228.jpg
-    image_path: /assets/images/field/Rwanda/20220806_132228.jpg
+    image_path: /assets/images/field/Rwanda/20220806_132228_sm.jpg
     alt: "Cowboy Jim"
     title: "UNAVCO Project Manager, Jim Normandeau, taking a little breather following the installation of our final GNSS site of the 2022 season.  EAIFR students look on from the shade below."
 ---

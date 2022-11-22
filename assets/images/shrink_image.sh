@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+INP=$1
+GEOM='1000x1000'
+if [ $2 ] ; then GEOM=$2 ; fi
+
+INP_PRE="${INP%.*}"
+INP_EXT="${INP##*.}"
+OUT=${INP_PRE}_sm.${INP_EXT}
+
+echo "Shrinking $INP to roughly $GEOM as $OUT"
+
+convert $INP -geometry $GEOM  $OUT

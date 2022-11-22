@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+INP=$1
+GEOM='1000x1000'
+if [ $2 ] ; then GEOM=$2 ; fi
+
+INP_PRE="${INP%.*}"
+INP_EXT="${INP##*.}"
+
+echo $INP_PRE $INP_EXT $GEOM
+
+
+convert $INP -geometry $GEOM ${INP_PRE}_sm${INP_EXT}

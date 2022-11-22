@@ -3,9 +3,26 @@ layout: single
 title: Newman Crew
 permalink: /crew/
 classes: wide
+
+gallerytop:
+  - url: /assets/images/student/Derrick_20200117_134953.jpg
+    image_path: /assets/images/student/Derrick_20200117_134953_sm.jpg
+    alt: "Derrick in NZ"
+    title: "Derrick Murekezi overlooking a cinder cone volcano near Taupo New Zealand"
+  - url: /assets/images/student/Crew_20190419_144509.jpg
+    image_path: /assets/images/student/Crew_20190419_144509_sm.jpg
+    alt: "Newman Crew Spring 2019"
+    title: "Tiegan, Amy, Louisa, Boyan, and Andy seriously considering geophysical interpretive dance"
+  - url: /assets/images/student/Lifton_CIMG0545.jpg
+    image_path: /assets/images/student/Lifton_CIMG0545_sm.jpg
+    alt: "Zach in White Mountains"
+    title: "Zach Lifton taking GPS field notes in the White Mountains in Eastern California"
+
 ---
 
-Below are current, and prior students, postdocs, and visiting scientists associated with the Newman Research Group
+{% include gallery id="gallerytop" layout="third" caption="" %}
+
+Below are current, and prior students, postdocs, and visiting scientists associated with the [Newman Research Group](../)
 
 ## Current
 * [Hiba Kunwer](https://www.linkedin.com/in/hmkunwer/) (in PhD Program 2022 -)
