@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Rwanda Field Photos
-permalink: /field/rwanda.html
+permalink: /field/Rwanda.html
 classes: wide
 
 

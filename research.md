@@ -24,5 +24,4 @@ Links to some of the Newman Crews ongoing and past research. Please visit the [P
 * [Cooperation in SZ4D Initiative](https://www.sz4d.org)
 
 ## From the Field
-
-* [Field Photos from our 2022 Rwandan Field campaign](../field/rwanda.html)
+* [Field Photos from our 2022 Rwandan Field campaign](../field/Rwanda.html)
