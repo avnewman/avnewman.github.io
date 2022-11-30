@@ -1,13 +1,30 @@
 ---
 layout: single
-title: "EAS 2600: Earth Processes"
+title: "EAS 2600 (Majors/HP): Earth Processes"
 permalink: /teaching/EarthProcesses/
+#header: 
+#    image: teaching/EarthProcesses/Dolomites_sunset_banner.jpg
+classes: wide
 sidebar:
   nav: "main"
+
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.2"   # opacity of overlay_color
+  overlay_image: teaching/EarthProcesses/Dolomites_sunset_banner.jpg
+  actions:
+    - label: "Syllabus"
+      url: "teaching/EarthProcesses/Syllabus_EAS2600_Spring2023.pdf"
+  #caption: "Photo credit: me"
+excerpt: "How the world works"
+
 ---
+
 **Spring 2023**
 
-* [Lecture Syllabus](Syllabus_EAS2600_Spring2023.pdf)
+*This section is for Majors, Minors, and students in the Honors Program.*
+
+<!-- * [Lecture Syllabus](Syllabus_EAS2600_Spring2023.pdf) -->
 
 Most course material will be made available through the [Course Canvas Page (old)](https://gatech.instructure.com/courses/247876), including information pertaining to COVID considerations.
 
