@@ -15,7 +15,8 @@ header:
   actions:
     - label: "Syllabus"
       url: "teaching/EarthProcesses/Syllabus_EAS2600_Spring2023.pdf"
-  #caption: "Photo credit: me"
+  caption: "Photo credit: [Max Rive Photography](https://500px.com/p/maxrivefotograaf)"
+  #caption: "Photo credit: [Max Rive Photography](https://maxrivephotography.com/)"
 excerpt: "How the world works"
 
 ---
