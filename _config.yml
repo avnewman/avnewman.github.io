@@ -83,7 +83,7 @@ baidu_site_verification  :
 twitter:
   username               : "Bent_Earth"
 mastodon:
-  username               : "Bent_Earth@techhub.social"
+  username               : "@Bent_Earth@mstdn.social"
 og_image                 : /assets/images/PacificProgram2020-TongariroAlpineCrossing-20200117_132709_small.jpg # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -92,7 +92,7 @@ social:
   name                   : "Andrew Newman" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
   - "https://twitter.com/Bent_Earth"
-  - "https://techhub.social/@Bent_Earth"
+  - "https://mstdn.social/@Bent_Earth"
   - "https://www.linkedin.com/in/andrew-newman-6811a2124/"
  
 # Analytics
@@ -125,7 +125,7 @@ author:
       url: "https://avnewman.github.io"
     - label: "Mastodon"
       icon: "fab fa-fw fa-mastodon"
-      url: "https://techhub.social/@Bent_Earth"
+      url: "https://mstdn.social/@Bent_Earth"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter"
       url: "https://twitter.com/Bent_Earth"
@@ -144,7 +144,7 @@ footer:
       url: "https://twitter.com/Bent_Earth"
     - label: "Mastodon"
       icon: "fab fa-fw fa-mastodon"
-      url: "https://techhub.social/@Bent_Earth"
+      url: "https://mstdn.social/@Bent_Earth"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/avnewman"
