@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Teaching and other Educational Activities
+classses: wide
 permalink: /teaching/
 sidebar:
   nav: "main"

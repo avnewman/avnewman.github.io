@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Publications
+classes: wide
 permalink: /pubs/
 sidebar:
   nav: "main"
