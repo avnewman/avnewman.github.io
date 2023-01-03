@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "dirt-avn" # "default", "air", "aqua", "contrast", "d
 # Site Settings
 locale                   : "en-US"
 title                    : "Andrew Newman's Professional Pages"
-title_separator          : "_"
+title_separator          : "-"
 subtitle                 : "Geophysical Research and Education for GeoHazards" # site tagline that appears below site title in masthead
 name                     : "Andrew Newman"
 description              : "Professional website for research, education, and community activities related to Andrew Newman's research group's efforts towards understanding Earth processes associated with geologic hazards."
