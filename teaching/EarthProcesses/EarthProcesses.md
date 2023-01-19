@@ -13,8 +13,10 @@ header:
   overlay_filter: "0.2"   # opacity of overlay_color
   overlay_image: teaching/EarthProcesses/Dolomites_sunset_banner.jpg
   actions:
-    - label: "Syllabus"
+    - label: "Lecture Syllabus"
       url: "teaching/EarthProcesses/Syllabus_EAS2600_Spring2023.pdf"
+    - label: "Lab Syllabus"
+      url: "teaching/EarthProcesses/Syllabus_EAS2600_Spring2023_Lab.pdf"
   caption: "Photo credit: [Max Rive Photography](https://500px.com/p/maxrivefotograaf)"
   #caption: "Photo credit: [Max Rive Photography](https://maxrivephotography.com/)"
 excerpt: "How the world works"
