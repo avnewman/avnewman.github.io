@@ -109,7 +109,7 @@ author:
   avatar           : "/assets/images/AVN_NZ_20200208_151235_sm.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Geophysics Professor and Undergrad Coordinator"
   location         : 
-  email            : 
+  email            : anewman_at_gatech_dot_edu
   links:
     - label: "EAS @ GT"
       icon: "fas fa-solid fa-school"
@@ -117,12 +117,15 @@ author:
     - label: "Building"
       icon: "fas fa-solid fa-map-pin"
       url: "https://drive.google.com/open?id=1qa-9kC-DHM7m1NvjHtyaUDZSVLJmZhjS&usp=sharing"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:anewman_at_gatech_dot_edu"
+#    - label: "Email"
+#      icon: "fas fa-fw fa-envelope-square"
+#      url: "mailto:anewman_at_gatech_dot_edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://avnewman.github.io"
+    - label: "Orcid"
+      icon: "fab fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0001-7414-1197"
     - label: "Mastodon"
       icon: "fab fa-fw fa-mastodon"
       url: "https://mstdn.social/@Bent_Earth"
