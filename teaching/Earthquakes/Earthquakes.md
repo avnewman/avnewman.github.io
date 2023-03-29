@@ -12,7 +12,7 @@ header:
   overlay_image:  /assets/images/figures/Turkey_deformation_NASA_PIA22412_banner.jpg
   actions:
     - label: "Syllabus"
-      url: "teaching/EarthProcesses/Syllabus_EQPhysics_Fall2023.pdf"
+      url: "teaching/Earthquakes/Syllabus_EQPhysics_Fall2023.pdf"
   caption: "Photo credit: NASA-JPL"
 excerpt: "Processes that drive and behaviors that modulate fault slip"
 
@@ -23,7 +23,6 @@ excerpt: "Processes that drive and behaviors that modulate fault slip"
 Note: This webpage is preliminary.
 {: .notice--warning}
 
-<!-- * [Lecture Syllabus](Syllabus_EAS2600_Spring2023.pdf) -->
 Most course material will be made available through the [Course Canvas Page](https://gatech.instructure.com/courses/TBD).
 
 ## Instructor:
@@ -37,6 +36,13 @@ Most course material will be made available through the [Course Canvas Page](htt
 
 ### Course Objectives:
 This course consists of a series of in-depth lectures, discussion and presentations of the current status of geophysical and mechanical understanding of processes that control earthquakes. We will explore the structural, thermal, and compositional make-up of faults and how geophysical and geological observation, laboratory experiments, and theoretical models have shaped our ideas about these perplexing processes. While earthquakes remain a significant societal issue that can destabilize populations, and cause massive long-term, and sometimes unforeseen economic and environmental effects (e.g. the Fukushima Daiichi nuclear disaster following the 2011 Japan Earthquake and Tsunami), there remains numerous fundamental scientific questions about how, when, and where earthquakes happen.
+
+### Goals:
+You will come away with:
+* foundational understanding in earthquake processes (including how strain accumulates and releases along new and existing faults) 
+* a stronger understanding of some important outstanding questions in earthquake science
+* research methods for advancing science
+* technical review, writing, and presentation skills
 
 ### Required Text:
 * Scholz, C.H., The Mechanics of Earthquakes and Faulting, 3rd Ed., Cambridge Univ. Press, 493 pp., 2019.
