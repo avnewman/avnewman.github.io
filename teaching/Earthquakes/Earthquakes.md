@@ -14,7 +14,7 @@ header:
     - label: "Syllabus"
       url: "teaching/EarthProcesses/Syllabus_EQPhysics_Fall2023.pdf"
   caption: "Photo credit: NASA-JPL"
-excerpt: "Processes the drive and trigger fault slip"
+excerpt: "Processes that drive and behaviors that modulate fault slip"
 
 ---
 
@@ -25,7 +25,6 @@ Note: This webpage is preliminary.
 
 <!-- * [Lecture Syllabus](Syllabus_EAS2600_Spring2023.pdf) -->
 Most course material will be made available through the [Course Canvas Page](https://gatech.instructure.com/courses/TBD).
-
 
 ## Instructor:
 * [Andrew Newman](/about)

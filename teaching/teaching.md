@@ -9,7 +9,7 @@ sidebar:
 Below are links to courses, and training modules developed and taught.  
 
 ## Official Courses and Seminars
-* [Earthquake Physics: EAS 4316/6316](/teaching/Earthquakes/)
+* [Earthquake Physics: EAS 4316/6316](/teaching/Earthquakes)
 * [Earth Processes (Majors and Honors): EAS 2600](/teaching/EarthProcesses) 
 * [Inverse Theory in Earth Sciences: EAS 6134](http://geophysics.eas.gatech.edu/anewman/classes/InverseTheory/)
 * [Introduction to Geophysics: EAS 3610](http://geophysics.eas.gatech.edu/anewman/classes/Geophysics) 
@@ -22,4 +22,3 @@ Below are links to courses, and training modules developed and taught.
 * [Introduction to Unix](http://geophysics.eas.gatech.edu/anewman/classes/Intro_Unix)
 * [Introduction to Generic Mapping Tools (GMT)](http://geophysics.eas.gatech.edu/anewman/classes/Intro_GMT)
 * [Introduction to PyGMT](https://github.com/avnewman/pyGMT-Tutorial)
-
