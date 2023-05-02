@@ -29,7 +29,9 @@ Links to some of the Newman Crew's ongoing and past research. Please visit the [
 ## Research Projects
 * [Near-Trench Deformation along Alaskan and Cascadian Megathrusts](https://www.seafloorgeodesy.org/commexp)
 * [Transient tectonics of the Kivu Rift System in Rwanda](/KIVU/) 
-* [Rapid characterization of earthquake energy](http://geophysics.eas.gatech.edu/people/anewman/research/RTerg/)
+* Characterization of Earthquake energy:
+  * [Near-real-time solutions at teleseismic distances (with focal mechanism estimation)](http://geophysics.eas.gatech.edu/people/anewman/research/RTerg/)
+  * [Post-processed solutions at teleseismic distances (using gCMT focal mechanism estimation)](http://ds.iris.edu/ds/products/eqenergy)
 * [Constraining deformation across the seismic cycle along the Nicoya Megathrust](https://nicoya.eas.gatech.edu/)
 * [Deformation at Santorini Caldera](http://geophysics.eas.gatech.edu/people/anewman/research/Santorini.html)
 * Machine learning for earthquake source characterization and association (soon.)
