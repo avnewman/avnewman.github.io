@@ -28,10 +28,10 @@ Links to some of the Newman Crew's ongoing and past research. Please visit the [
 
 ## Research Projects
 * [Near-Trench Deformation along Alaskan and Cascadian Megathrusts](https://www.seafloorgeodesy.org/commexp)
-* [Constraining deformation across the seismic cycle along the Nicoya Megathrust](https://nicoya.eas.gatech.edu/)
-* [Rapid characterization of earthquake energy](http://geophysics.eas.gatech.edu/people/anewman/research/RTerg/)
-* [Deformation at Santorini Caldera](http://geophysics.eas.gatech.edu/people/anewman/research/Santorini.html)
 * [Transient tectonics of the Kivu Rift System in Rwanda](/KIVU/) 
+* [Rapid characterization of earthquake energy](http://geophysics.eas.gatech.edu/people/anewman/research/RTerg/)
+* [Constraining deformation across the seismic cycle along the Nicoya Megathrust](https://nicoya.eas.gatech.edu/)
+* [Deformation at Santorini Caldera](http://geophysics.eas.gatech.edu/people/anewman/research/Santorini.html)
 * Machine learning for earthquake source characterization and association (soon.)
 
 ## Community Activities
@@ -42,4 +42,4 @@ Links to some of the Newman Crew's ongoing and past research. Please visit the [
 * [Cooperation in SZ4D Initiative](https://www.sz4d.org)
 
 ## From the Field
-* [Field Photos from our 2022 Rwandan Field campaign](../field/Rwanda.html)
+* [Field Photos from our 2022 Rwandan Field campaign](/field/Rwanda.html)
