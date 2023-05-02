@@ -24,16 +24,17 @@ gallerytop:
 
 {% include gallery id="gallerytop" layout="third" caption="" %}
 
-Below are current, and prior students, postdocs, and visiting scientists associated with the [Newman Research Group](../)
+Below are current, and prior students, postdocs, and visiting scientists associated with the [Newman Research Group](/.)
 
 ## Current
+* [Quincey Nielson](https://www.linkedin.com/in/quincey-nielson-257597254/) (Undergrad Research 2023 -)
 * [Hiba Kunwer](https://www.linkedin.com/in/hmkunwer/) (in PhD Program 2022 -)
-* [Baylee MacBeth](https://www.linkedin.com/in/baylee-macbeth-194508202/) (Undergrad Research)
-* [Leah Jaffe](https://www.linkedin.com/in/leah-jaffe-1371a0128/) (2022 visiting IRIS Undergrad Intern)
+* [Baylee MacBeth](https://www.linkedin.com/in/baylee-macbeth-194508202/) (Undergrad Research 2022 -)
 * [Derrick Murekezi](https://www.linkedin.com/in/derrickmurekezi/) (in PhD Program 2019 -)
 
 ## Past
 * [Dr. Louisa Barama](https://www.linkedin.com/in/louisa-barama/) (PhD, Dec. 2022)
+* [Leah Jaffe](https://www.linkedin.com/in/leah-jaffe-1371a0128/) (2022 visiting IRIS Undergrad Intern)
 * [Ethan Losasso](https://www.linkedin.com/in/ethan-losasso-b94a2a22b/) (BS-planned, 2023) 
 * [Dr. Boyan Liu](https://www.researchgate.net/profile/boyan-Liu) (visiting 2019)
 * [Prof. Tiegan Hobbs](http://tieganhobbs.com/) (PhD, Mar. 2019)
