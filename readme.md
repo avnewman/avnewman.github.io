@@ -14,6 +14,7 @@ jekyll new avnewman.github.io
 ```
 cd avnewman.github.io/
 bundle exec jekyll serve
+# the above builds a local version of the website using the Gemsfile in this directory (rather than a default one) 
 ```
 check site at:
 http://127.0.0.1:4000/

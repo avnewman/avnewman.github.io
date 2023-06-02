@@ -1,0 +1,21 @@
+---
+layout: posts
+title:  "Rwandan GNSS (and MT) Field Campaign"
+date:   2023-06-02 15:48:25 +0200
+categories: Field
+---
+We are just now wrapping up GPS/GNSS Field work and some training along the Kivu Rift in Rwanda.
+
+Before heading out to the field, we met individually with personnel from the Rwandan Mining Board ([RMB][RMB]), the Rwandan Envronmental Management Agency ([REMA][REMA]), and the East African Institute for Fundamental Research ([EAIFR][EAIFR]).
+
+We serviced our 7 continuous GNSS station, established one new campaign GNSS station, and performed a Magnetotelluric survey (MT), last part led by colleague Samer Naif.  More of our project can be read [here][KIVU].
+
+![Nyriagongo Volcano](/assets/images/field/Rwanda/20230530_155720_sm.jpg)
+Scouting site for Magnetotelluric measurements along the Rwanda-DRC border looking toward Nyriagongo Volcano.
+![Campaign GNSS Station NNPN](/assets/images/field/Rwanda/20230526_111536_sm.jpg)
+GT Grad Student Derrick Murekezi, and RMB Employee Gaspard Nywandi with campaign GNSS station NNPN.
+
+[RMB]: https://www.rmb.gov.rw/
+[REMA]: https://www.rema.gov.rw/
+[EAIFR]: https://eaifr.org/
+[KIVU]: /KIVU
