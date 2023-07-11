@@ -6,7 +6,7 @@ categories: Field
 ---
 We are just now wrapping up GPS/GNSS Field work and some training along the Kivu Rift in Rwanda.
 
-Before heading out to the field, we met individually with personnel from the Rwandan Mining Board ([RMB][RMB]), the Rwandan Envronmental Management Agency ([REMA][REMA]), and the East African Institute for Fundamental Research ([EAIFR][EAIFR]).
+Before heading out to the field, we met individually with personnel from the Rwandan Mining Board ([RMB]), the Rwandan Environmental Management Agency ([REMA]), and the East African Institute for Fundamental Research ([EAIFR]).
 
 We serviced our 7 continuous GNSS station, established one new campaign GNSS station, and performed a Magnetotelluric survey (MT), last part led by colleague Samer Naif.  More of our project can be read [here][KIVU].
 
