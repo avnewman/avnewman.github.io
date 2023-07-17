@@ -27,10 +27,14 @@ gallerytop:
 Below are current, and prior students, postdocs, and visiting scientists associated with the [Newman Research Group](/.)
 
 ## Current
-* [Quincey Nielson](https://www.linkedin.com/in/quincey-nielson-257597254/) (Undergrad Research 2023 -)
-* [Hiba Kunwer](https://www.linkedin.com/in/hmkunwer/) (in PhD Program 2022 -)
-* [Baylee MacBeth](https://www.linkedin.com/in/baylee-macbeth-194508202/) (Undergrad Research 2022 -)
+### Grads
 * [Derrick Murekezi](https://www.linkedin.com/in/derrickmurekezi/) (in PhD Program 2019 -)
+* [Hiba Kunwer](https://www.linkedin.com/in/hmkunwer/) (in PhD Program 2022 -)
+* [Nathalie Chavarria](https://www.researchgate.net/profile/Nathalie-Chavarria) (in PhD Program 2023 -)
+
+### Undergrads
+* [Baylee MacBeth](https://www.linkedin.com/in/baylee-macbeth-194508202/) (Undergrad Research 2022 -)
+* [Quincey Nielson](https://www.linkedin.com/in/quincey-nielson-257597254/) (Undergrad Research 2023 -)
 
 ## Past
 * [Dr. Louisa Barama](https://www.linkedin.com/in/louisa-barama/) (PhD, Dec. 2022)
