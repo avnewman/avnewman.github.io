@@ -23,7 +23,7 @@ excerpt: "Processes that drive and behaviors that modulate fault slip"
 Note: **This webpage is preliminary**.
 {: .notice--warning}
 
-Most course material will be made available through the [Course Canvas Page](https://gatech.instructure.com/courses/TBD).
+Most course material will be made available through the [Course Canvas Page](https://gatech.instructure.com/courses/350848)
 
 ## Instructor:
 * [Andrew Newman](/about)
