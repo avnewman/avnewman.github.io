@@ -18,10 +18,10 @@ excerpt: "Processes that drive and behaviors that modulate fault slip"
 
 ---
 
-**Fall 2023**
+# Fall 2023
 
-Note: **This webpage is preliminary**.
-{: .notice--warning}
+[//]: # (Note: **This webpage is preliminary**.)
+[//]: # ({: .notice--warning})
 
 Most course material will be made available through the [Course Canvas Page](https://gatech.instructure.com/courses/350848)
 
