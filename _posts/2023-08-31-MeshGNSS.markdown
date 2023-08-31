@@ -2,7 +2,7 @@
 layout: posts
 title:  "Mesh Network GNSS-Acoustic Experiment in Alaska"
 date:   2023-08-31 12:50:01 +0500
-categories: "New Funding"
+categories: Funding
 ---
 
 I was recently [awarded][Award] funding for an exciting new technical experiment to push the limits of what we can do with GNSS-Acoustic-based seafloor geodetic observations.  In the experiment, we are buying and deploying a new Wave Glider and 10 new transponders for deployment in the near-trench environment that are expected to be most responsible for large tsunamis.  
