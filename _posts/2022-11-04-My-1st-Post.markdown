@@ -1,9 +1,0 @@
----
-layout: posts
-title:  "First Post"
-date:   2022-11-04 20:22:15 -0400
-categories: First Post
----
-I am currently in the process of migrating my [old content][oldpages] to a 21st-century looking site.
-
-[oldpages]: http://geophysics.eas.gatech.edu/anewman/old.html

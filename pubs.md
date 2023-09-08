@@ -11,6 +11,10 @@ Below is a running list of [peer-reviewed](#peer-reviewed), and [other](#other) 
 
 ## Peer-reviewed:
 
+1. Barama, L., J. Williams, A. V. Newman, Z. Peng (2023), Global Nuclear Explosion Discrimination Using a Convolutional Neural Network,
+	<i>Geophysical Research Letters</i>, 50 (17): e2022GL101528. 
+	<a  href="https://doi.org/10.1029/2022GL101528">https://doi.org/10.1029/2022GL101528</a>
+
 1. Barama, L., Z. Peng, A. V. Newman, J. Williams (2022), GTUNE: An Assembled Global Seismic Dataset of Underground 
 	Nuclear Test Blasts, <i>Seismological Research Letters</i>, 93 (6): 3514–3523. <a  href="https://doi.org/10.1785/0220220036">doi.org/10.1785/0220220036</a>
 	<br><a href="http://geophysics.eas.gatech.edu/anewman/research/papers/Barama_etal_SRL_2022.pdf">PDF</a>
