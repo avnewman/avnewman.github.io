@@ -5,6 +5,10 @@ date:   2023-08-31 12:50:01 +0500
 categories: Funding
 ---
 
+Update: The Postdoc position is now open for applications.
+You can [apply here][Apply], and please feel free to contact me  to discuss the position.
+
+
 I was recently [awarded][Award] funding for an exciting new technical experiment to push the limits of what we can do with GNSS-Acoustic-based seafloor geodetic observations.  In the experiment, we are buying and deploying a new Wave Glider and 10 new transponders for deployment in the near-trench environment that are expected to be most responsible for large tsunamis.  
 
 Over three years we will specifically be testing (1) deep-water measurements using lower frequency transponders than commonly used, (2) observations that include high gradients of change across the seafloor, and (3) the application of a mesh-network design that can dramatically reduce the cost of observations where dense deformation data are helpful.
@@ -23,3 +27,4 @@ The proposed experiment design.
 [SFG]: https://seafloorgeodesy.org
 [MZ]: https://mzumberge.scrippsprofiles.ucsd.edu/biography/
 [SX]: https://www.cive.uh.edu/faculty/xie-surui
+[Apply]: https://careers.hprod.onehcm.usg.edu/psp/careers/CAREERS/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Page=HRS_APP_JBPST_FL&Action=U&FOCUS=Applicant&SiteId=3000&JobOpeningId=263629&PostingSeq=1
