@@ -3,6 +3,9 @@ main:
   - title: "About"
     url: about/
     description: "What we do"
+  - title: "News"
+    url: posts/
+    description: "What's going on"
   - title: "Research"
     url: research/
     description: "Newman Crew Research"
