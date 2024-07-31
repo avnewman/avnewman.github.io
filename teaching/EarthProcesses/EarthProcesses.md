@@ -14,19 +14,17 @@ header:
   overlay_image: teaching/EarthProcesses/Dolomites_sunset_banner.jpg
   actions:
     - label: "Lecture Syllabus"
-      url: "teaching/EarthProcesses/Syllabus_EAS2600_Spring2024.pdf"
+      url: "teaching/EarthProcesses/Syllabus_EAS2600_Fall2024.pdf"
     - label: "Lab Syllabus"
-      url: "teaching/EarthProcesses/Syllabus_EAS2600_Spring2024_Lab.pdf"
+      url: "teaching/EarthProcesses/Syllabus_EAS2600_Fall2024_Lab.pdf"
   caption: "Photo credit: [Max Rive Photography](https://500px.com/p/maxrivefotograaf)"
   #caption: "Photo credit: [Max Rive Photography](https://maxrivephotography.com/)"
 excerpt: "How the world works"
 
 ---
 
-**Spring 2024**
+**Fall 2024**
 *This section is for EAS Majors and Minors*
-
-<!-- * [Lecture Syllabus](Syllabus_EAS2600_Spring2023.pdf) -->
 
 Most course material will be made available through the [Course Canvas Page](https://gatech.instructure.com/courses/363400)
 
