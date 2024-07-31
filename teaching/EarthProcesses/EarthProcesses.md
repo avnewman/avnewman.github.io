@@ -26,7 +26,7 @@ excerpt: "How the world works"
 **Fall 2024**
 *This section is for EAS Majors and Minors*
 
-Most course material will be made available through the [Course Canvas Page](https://gatech.instructure.com/courses/363400)
+Most course material will be made available through the [Course Canvas Page](https://gatech.instructure.com/courses/417516)
 
 ## Instructors
 * **Lecture:** [Andrew Newman](/about)
