@@ -11,6 +11,11 @@ Below is a running list of [peer-reviewed](#peer-reviewed), and [other](#other) 
 
 ## Peer-reviewed:
 
+1. Maier, N. , E. E. Rodriguez, R. Grapenthin, A. V. Newman, C. Donahue, E. Lindsey, P. Roberts, S. Devine (2025), 
+    Limited surface deformation, seismic velocity changes observed in Valles Caldera over decadal timescales,
+	<i>Journal of Volcanology and Geothermal Research</i>, 460(108283).
+	<a  href="https://doi.org/10.1016/j.jvolgeores.2025.108283">https://doi.org/10.1016/j.jvolgeores.2025.108283</a>
+
 1. Barama, L., J. Williams, A. V. Newman, Z. Peng (2023), Global Nuclear Explosion Discrimination Using a Convolutional Neural Network,
 	<i>Geophysical Research Letters</i>, 50 (17): e2022GL101528. 
 	<a  href="https://doi.org/10.1029/2022GL101528">https://doi.org/10.1029/2022GL101528</a>
