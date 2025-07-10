@@ -30,15 +30,24 @@ Most course material will be made available through the [Course Canvas Page](htt
 
 ## Instructors
 * **Lecture:** [Andrew Newman](/about)
-* **Lab TA:** [Derrick Murekezi](https://www.linkedin.com/in/derrickmurekezi/)
+* **Lab TA:** [Nathalie Chavarría](https://www.researchgate.net/profile/Nathalie-Chavarria)
 
 ## Course Information
 ### Course Objectives:
 The purpose of this course is to provide you with an understanding of how the Earth works and how it affects you. As an inhabitant of Earth, it is important that you understand the processes that shape the landscape, cause natural hazards, influence climate change, and produce natural resources.  Knowledge of how the Earth works can also help you in your daily lives. For example, it is useful to be able to evaluate potential geologic hazards when buying a home, make informed decisions about the use and conservation of natural resources, and better appreciate features you might encounter in the mountains, at the beach, or when visiting a national park.
+###  Student Learning Outcomes:
+In addition to critical scientific thinking, students will come away with an overview of major Earth and planetary processes associated with:
+- Natural and Anthropogenic Hazards (incl., earthquakes, tsunami, flooding, landslides)
+- Earth Resources and Materials (incl., water, mineral, energy, construction, formation and differentia-
+tion of rocks & minerals)
+- Planetary and Biologic Evolution and Plate Tectonics (incl., geologic time & dating, nutrient cycling
+& availability, biologic radiations/extinctions)
+- Impacts on the Earth’s Critical Zone (incl., landscape evolution, atmo/cryo/hydro-sphere, biologic,
+human
 
 ### Required Text:
 * Grotzinger, J. & T. Jordan, Understanding Earth, 8th (or 6th or 7th) Ed., Macmillan Learning, ISBN: 131905532X, 2020 (2010, 2014).
 
-Materials are largely similar between versions.  In the syllabus, the chapter numbers for each will be used (6 and 7 in parantheses).
+Materials are largely similar between versions. 
 
-I don't normally recommend E-editions for majors (great reference), but you may want to consider going entirely digital, and get some E-edition for this semester. 
+I don't normally recommend E-editions for majors (great reference), but you may want to consider going entirely digital.

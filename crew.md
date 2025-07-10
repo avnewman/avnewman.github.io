@@ -33,10 +33,11 @@ Below are current, and prior students, postdocs, and visiting scientists associa
 * [Nathalie Chavarria](https://www.researchgate.net/profile/Nathalie-Chavarria) (in PhD Program 2023 -)
 
 ### Undergrads
-* [Baylee MacBeth](https://www.linkedin.com/in/baylee-macbeth-194508202/) (Undergrad Research 2022 -)
-* [Quincey Nielson](https://www.linkedin.com/in/quincey-nielson-257597254/) (Undergrad Research 2023 -)
+* [Elianna Cohen](https://www.linkedin.com/in/eliannacohen/) (2025 -)
 
 ## Past
+* [Quincey Nielson](https://www.linkedin.com/in/quincey-nielson-257597254/) (BS Fall 2024)
+* [Baylee MacBeth](https://www.linkedin.com/in/baylee-macbeth-194508202/) (BS Fall 2023)
 * [Dr. Louisa Barama](https://www.linkedin.com/in/louisa-barama/) (PhD, Dec. 2022)
 * [Leah Jaffe](https://www.linkedin.com/in/leah-jaffe-1371a0128/) (2022 visiting IRIS Undergrad Intern)
 * [Ethan Losasso](https://www.linkedin.com/in/ethan-losasso-b94a2a22b/) (BS-planned, 2023) 
@@ -58,7 +59,7 @@ Below are current, and prior students, postdocs, and visiting scientists associa
 * [Zachary Meeks](https://www.linkedin.com/in/zmeeks/) (BS, 2012)
 * [Chenxiao Du](https://www.linkedin.com/pub/chenxiao-du/1a/268/2b5) (MS, Dec. 2011)
 * [Yao Lou](https://www.linkedin.com/in/yanluo1) (MS, Dec. 2011)
-* [Dr. Lujia Feng](https://sites.google.com/view/gnss4natural-hazards) (PhD, June 2011)
+* [Prof. Lujia Feng](https://sites.google.com/view/gnss4natural-hazards) (PhD, June 2011)
 * [Christine Gammans](https://www.linkedin.com/in/christine-gammans-b8b62884) (BS, May 2011)
 * [Crystal Moon]() (BS, 2010)
 * [Prof. Abhijit Ghosh](http://faculty.ucr.edu/~aghosh/) (MS, June 2007)
