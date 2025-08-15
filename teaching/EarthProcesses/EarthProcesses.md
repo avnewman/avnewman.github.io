@@ -15,8 +15,8 @@ header:
   actions:
     - label: "Lecture Syllabus"
       url: "teaching/EarthProcesses/Syllabus_EAS2600_Fall2025.pdf"
-    - label: "Lab Syllabus (old)"
-      url: "teaching/EarthProcesses/Syllabus_EAS2600_Fall2024_Lab.pdf"
+    - label: "Lab Syllabus"
+      url: "teaching/EarthProcesses/Syllabus_EAS2600_Fall2025_Lab.pdf"
   caption: "Photo credit: [Max Rive Photography](https://500px.com/p/maxrivefotograaf)"
   #caption: "Photo credit: [Max Rive Photography](https://maxrivephotography.com/)"
 excerpt: "How the world works"
