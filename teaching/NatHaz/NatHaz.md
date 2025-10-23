@@ -18,7 +18,7 @@ header:
 
 actions:
     - label: "Syllabus"
-      url: "teaching/NatHaz/Syllabus_EAS3803-NatHaz_Spring2026.pdf"
+      url: "teaching/NatHaz/Syllabus_NatHaz_Spring2026.pdf"
 # caption: "Photo credit: [Max Rive Photography](https://maxrivephotography.com/)"
 excerpt: "identify, quantify, understand, mitigate"
 ---
