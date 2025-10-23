@@ -11,7 +11,7 @@ sidebar:
 header:
   overlay_color: "#000"
   overlay_filter: "0.2"   # opacity of overlay_color
-  overlay_image: "teaching/NatHaz/ChatGPT_Haz.jpg"
+  overlay_image: "teaching/NatHaz/chatGPT_Haz.png"
   actions:
     - label: "Syllabus"
       url: "teaching/NatHaz/Syllabus_EAS3803-NatHaz_Spring2026.pdf"
