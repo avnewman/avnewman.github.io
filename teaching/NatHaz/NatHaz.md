@@ -15,8 +15,7 @@ header:
 #  caption: "Photo credit: ChatGPT"
   overlay_image: "teaching/NatHaz//otkn_313_hurricanestormsurge_web_1280.jpg"
   caption: "Photo credit: [NOAA Coastal Hazards](https://www.tidesandcurrents.noaa.gov/coastal_hazards.html)"
-
-actions:
+  actions:
     - label: "Syllabus"
       url: "teaching/NatHaz/Syllabus_NatHaz_Spring2026.pdf"
 # caption: "Photo credit: [Max Rive Photography](https://maxrivephotography.com/)"
