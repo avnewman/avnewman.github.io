@@ -11,11 +11,14 @@ sidebar:
 header:
   overlay_color: "#000"
   overlay_filter: "0.2"   # opacity of overlay_color
-  overlay_image: "teaching/NatHaz/chatGPT_Haz.png"
-  actions:
+#  overlay_image: "teaching/NatHaz/chatGPT_Haz.png"
+#  caption: "Photo credit: ChatGPT"
+  overlay_image: "teaching/NatHaz//otkn_313_hurricanestormsurge_web_1280.jpg"
+  caption: "Photo credit: [NOAA Coastal Hazards](https://www.tidesandcurrents.noaa.gov/coastal_hazards.html)"
+
+actions:
     - label: "Syllabus"
       url: "teaching/NatHaz/Syllabus_EAS3803-NatHaz_Spring2026.pdf"
-  caption: "Photo credit: ChatGPT"
 # caption: "Photo credit: [Max Rive Photography](https://maxrivephotography.com/)"
 excerpt: "identify, quantify, understand, mitigate"
 ---
