@@ -28,7 +28,7 @@ Most course material will be made available through the [Course Canvas Page](htt
 
 ## Instructor:
 * [Andrew Newman](/about)
-* TA: TBD
+* TA: Sonia Hajaji
 
 ## Course Information
 ### Course Objectives:
