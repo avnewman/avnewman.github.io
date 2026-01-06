@@ -38,13 +38,13 @@ monitoring may have on the community.
 
 ###  Student Learning Outcomes:
 Students will develop an integrated understanding of Earth hazards and their impact to populations:
-  - Geologic Hazards including earthquakes, volcanism, landslides, tsunamis.
-  - Atmospheric Hazards including hurricanes, flooding, climate change.
+  - Geologic hazards including earthquakes, volcanism, landslides, tsunamis.
+  - Atmospheric hazards including hurricanes, flooding, climate change.
   - Synthesis of Earth System interactions as they pertain to direct and cascading hazards.
   - Data analysis and statistics based on real-world data
-  - Scientific Communication through written and oral communication
+  - Scientific communication through written and oral communication
 
 ### Required Text:
-* Keller, E. A., & D. E. DeVecchio, *Natural Hazards*, 5th Ed., Taylor & Francis Group, ISBN: 9781315164298, 2019.
+* Marshak, S., R. Rauber, & N. Johnson, *Natural Disasters*, 1st Ed., W. W. Norton & Company, ISBN: 9780393921977 (paperback)/9780393532623 (epub), 2022.
 
 I don't normally recommend E-editions for majors (great reference), but you may want to consider going entirely digital.
