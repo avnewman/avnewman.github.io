@@ -24,20 +24,21 @@ gallerytop:
 
 {% include gallery id="gallerytop" layout="third" caption="" %}
 
-Below are current, and prior students, postdocs, and visiting scientists associated with the [Newman Research Group](/.)
+Below are current and prior students, postdocs, and visiting scientists associated with the Newman Research Group.
 
 ## Current
 ### Grads
-* [Derrick Murekezi](https://www.linkedin.com/in/derrickmurekezi/) (in PhD Program 2019 -)
 * [Hiba Kunwer](https://www.linkedin.com/in/hmkunwer/) (in PhD Program 2022 -)
 * [Nathalie Chavarria](https://www.researchgate.net/profile/Nathalie-Chavarria) (in PhD Program 2023 -)
-
+* (If interested, please reach out)
 ### Undergrads
-* [Elianna Cohen](https://www.linkedin.com/in/eliannacohen/) (2025 -)
+* (If interested, please reach out)
 
 ## Past
-* [Quincey Nielson](https://www.linkedin.com/in/quincey-nielson-257597254/) (BS Fall 2024)
-* [Baylee MacBeth](https://www.linkedin.com/in/baylee-macbeth-194508202/) (BS Fall 2023)
+* [Dr. Derrick Murekezi](https://www.linkedin.com/in/derrickmurekezi/) (PhD, 2025)
+* [Elianna Cohen](https://www.linkedin.com/in/eliannacohen/) (BS, Fall 2025)
+* [Quincey Nielson](https://www.linkedin.com/in/quincey-nielson-257597254/) (BS, Fall 2024)
+* [Baylee MacBeth](https://www.linkedin.com/in/baylee-macbeth-194508202/) (BS, Fall 2023)
 * [Dr. Louisa Barama](https://www.linkedin.com/in/louisa-barama/) (PhD, Dec. 2022)
 * [Leah Jaffe](https://www.linkedin.com/in/leah-jaffe-1371a0128/) (2022 visiting IRIS Undergrad Intern)
 * [Ethan Losasso](https://www.linkedin.com/in/ethan-losasso-b94a2a22b/) (BS-planned, 2023) 
