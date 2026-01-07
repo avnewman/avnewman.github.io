@@ -11,6 +11,12 @@ Below is a running list of [peer-reviewed](#peer-reviewed), and [other](#other) 
 
 ## Peer-reviewed:
 
+1. Murekezi, D., A. Newman,  C. Wauthier,  C. J. Ebinger,  P. Lundgren,  J. Gonzalez Santana,  T. Niyitegeka,  G. Nyandwi, 
+    T. Habiyakare,  J. Uwiduhaye (2026), 
+    Characterization of Crustal Deformation During the May 2021 Nyiragongo Eruption Using InSAR and GNSS Data,
+	<i>Geophysical Research Letters</i>, 53: e2025GL116073.
+	<a  href="https://doi.org/10.1029/2025GL116073">https://doi.org/10.1029/2025GL116073</a>
+
 1. Maier, N. , E. E. Rodriguez, R. Grapenthin, A. V. Newman, C. Donahue, E. Lindsey, P. Roberts, S. Devine (2025), 
     Limited surface deformation, seismic velocity changes observed in Valles Caldera over decadal timescales,
 	<i>Journal of Volcanology and Geothermal Research</i>, 460(108283).
