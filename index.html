@@ -68,7 +68,7 @@ feature_row:
 {% assign posts = site.posts %}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-  {% for post in posts %}
+  {% for post in posts limit: 3 %}
     {% include archive-single.html type=entries_layout %}
   {% endfor %}
 
