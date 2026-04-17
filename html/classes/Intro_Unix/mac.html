@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD><TITLE>Macintosh computer connections to the Geophysics Linux network</TITLE>
+<base href="http://geophysics.eas.gatech.edu/people/anewman/">
+<link rel="stylesheet" href="css/simple.css" type="text/css">
+</HEAD>
+<BODY bgColor=lightyellow>
+<center>
+<TABLE width=98% border=0 cellpadding=10><TBODY>
+  <TR> <TD align=right>
+     <font size=-1><a href="javascript:window.close()">[X] close window</a></font>
+  </TD></TR>
+<TR> <TD align=Left>
+   <h1>Mac OS X connections to Geophysics computers:</h1> 
+  <p>
+    Macintosh computers with operating systems after X (10) were built on top of a platform very similar to Unix and Linux, called BSD.  Becaused of this
+    much of the functionality that exists within those operating systems now sit at the core of Macs, and many of the things that we do on the command line
+    will work similarly on each Linux, UNIX, and Mac machines. 
+  <p>
+    Here, we are just focusing on using the Mac for access to the Geophysics Linux system, which should be quite easy.  
+  <p>
+    Before you begin, please see that <c>X11</c> is installed on your machine.  This may come as a default in some newer installations, if not, it may either exist
+    on the OS X install DVD (Tiger: 10.4), or through a separate download of the <c>XCode</c> tools available from the Apple website.  There are other ways of installing
+    X11, but are beyond the scope of this intro.
+
+
+After insuring  <c>X11</c> is installed on your machine,  follow these instructions to create a double-hop between 
+    <c>eas-ssh.eas.gatech.edu</c> and <c>masaya.eas.gatech.edu</c> from your machine.  You can switch the second machine for any other on the geophysics 
+    network, depending on your needs.
+
+<p>Please be aware that details may change depending on version of the software and OS. <ol>
+<li> Launch <c>X11</c> (Under <c>Applications</c> then <c>Utilities</c>). This is needed if you want to display remote windows.
+
+<li> Launch <c>Terminal</c> (Also under <c>Applications</c> then <c>Utilities</c>).
+
+<li> From the <c>Terminal</c> window, just type the following on the command line:
+<pre class=screen> ssh -Y <r>'buzzport ID'</r>@eas-ssh.eas.gatech.edu -t ssh -X <r>'geophys username'</r>@masaya.eas.gatech.edu</pre>
+<r>NOTE: change red items above</r>
+<li> Accept and store any ssh or askpass keys. You will only have to do this once, for every unique machine-machine connection for a given user.
+<li> You will be prompted 2 times for passwords.  The first time will be  <c>your buzzport password</c> to login to eas-ssh, and then
+it will be <c>your local password</c> on the geophysics system.
+
+<li> Your terminal should now be connected to <c>masaya</c>, and anything you type in that window will be on that machine rather than your own.  
+Please test to make sure you can actively type in the window, and be sure you are on the correct machine.  
+A good first test is to type: <c>'hostname'</c>, which will tell you the name of the machine that you're on.
+<li> Now, test to be sure that you can bring up a second remote window. This can be done by typing: <c>'xterm &amp;'</c>.
+
+<li> To close the terminal windows, just type <c>'exit'</c>.  Once you've closed all windows, the connection should automatically stop.
+
+</ol>
+
+<p>For more information look <a href=http://www.google.com>here</a>.
+  </TD></TR>
+  <TR> <TD align=right>
+  <font size=-1>Last Modified:
+Thu Aug  1 10:57:10 EDT 2013
+  </font>
+  </TD></TR>
+</TBODY></TABLE>
+</FORM>
+</center>
+<script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); </script>
+<script type="text/javascript"> var pageTracker = _gat._getTracker("UA-6112466-2"); pageTracker._trackPageview(); </script>
+</BODY></HTML>

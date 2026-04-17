@@ -1,0 +1,102 @@
+body {
+	background-color: lightyellow;
+	color: black;
+	font-size: 12px;
+	font-family: tahoma, helvetica, sans-serif;
+	font-family: Verdana, Geneva, sans-serif;
+	line-height: 1.5em;
+
+}
+ A:link {text-decoration: none ; color: #0000aa; }
+ A:visited {text-decoration: none ; color: #662222; }
+ A:active {text-decoration: none ; color: red; }
+ A:hover {text-decoration: underline; color: red; }
+
+
+div {
+	border: none;
+}
+li {
+	border: none;
+	margin: 0;
+}
+li p {
+	display: inline;
+}
+
+h1 {
+	font-size: 16pt;
+}
+
+h2 {
+	font-size: 12pt;
+}
+h3,h4,h5 {
+	font-size: 10pt;
+}
+img {
+	border: none;
+	/* background-color: white; */
+}
+hr {
+	border: 1px 
+	/*border-width: 0 0 1 0;*/
+	margin: 1em;
+}
+table {
+	border: none;
+	border-style: none;
+	border-collapse: collapse;
+	background: lightyellow;   /* background: #ffffdd; */
+}
+td,th {
+	border: none;
+	border-style: none;
+	padding: 10pt;
+	font-size: 9pt;
+}
+
+red, r { color: red; }
+c { color: darkred; }
+bl { color: blue; }
+gr { color: green; }
+
+box {
+  border: 5px solid #008800;
+  padding: 5px;
+  margin: 5px;
+  background: #ccffca;
+  /*
+  width: 200px;
+*/
+}
+
+code.green, pre.scr, pre.green {
+	font-family: monospace;
+	font-size: 1em;
+	display: block;
+	padding: 5pt;
+	margin: 0.5em 2em;
+	border: 1px solid #bbb;
+	background-color: #ccffcc;
+	color: #000;
+	overflow: auto;
+}
+
+
+code.screen, pre.scr, pre.screen {
+	font-family: monospace;
+	font-size: 1em;
+	display: block;
+	padding: 5pt;
+	margin: 0.5em 0.5em;
+	border: 1px solid #bbb;
+	background-color: #eee;
+	color: #000;
+	overflow: auto;
+}
+
+.navheader table, .navheader table td {
+	border: 0 !important;
+}
+

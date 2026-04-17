@@ -1,0 +1,79 @@
+#!/bin/bash
+# program: lfilesearch
+# by Andrew Newman
+# last modified: Tue Sep 19 14:00:38 EDT 2006
+# program will search default or input lfile for
+# stations that are either within a certain distance of a point
+# or within a rectangular range
+
+LFILE=/home/anewman/gg/tables/lfile.spherical
+USAGE=~/$$.usage
+# create a usage display that will be shown if command is run with no arguements
+       printf "Usage: `basename $0` [-CLON/LAT/RAD] [-RLONMIN/LONMAX/LATMIN/LATMAX] [-L lfile]
+        Program will search default or input lfile for stations that are either within a certain distance of a point
+        or within a rectangular area.
+          One of the two options is required:
+           -C will search the LFILE for stations within the circular radius [km] from CLON, CLAT
+           -R will search the LFILE for stations within rectangular region between LONMIN/LONMAX 
+	       and LATMIN/LATMAX. distance output will be from center of rectangle.
+	  Option:
+	   -L will use the input LFILE rather than default 
+	  Caveat:
+	   + This program _will_ fail if search is across the international date-line or poles. 
+	   + search assumes a useful range between -180/180 and -90/90.
+	    For example: `basename $0` -C-107/35/1000  
+	             or: `basename $0` -R-120/-100/10/40 \n " >$USAGE
+ if  [ ${#} -lt "1" ] ; then
+   cat $USAGE  # display usage
+   rm $USAGE
+   exit 1 # exit with error after removing temp file
+ fi
+
+while getopts ":C:R:L:" OPT
+do
+   case ${OPT} in
+       C) CLON=`echo $OPTARG | awk -F"/" '{print $1}'`
+          CLAT=`echo $OPTARG | awk -F"/" '{print $2}'`
+          CRAD=`echo $OPTARG | awk -F"/" '{print $3}'`
+	  CSEARCH=1; # flag for radial search, else do a rectangular search
+        ;;
+       R) LONMIN=`echo $OPTARG | awk -F"/" '{print $1}'`
+          LONMAX=`echo $OPTARG | awk -F"/" '{print $2}'`
+          LATMIN=`echo $OPTARG | awk -F"/" '{print $3}'`
+          LATMAX=`echo $OPTARG | awk -F"/" '{print $4}'`
+	  CLON=`echo $OPTARG | awk -F"/" '{print ($1+$2)/2}'` # Get central point
+	  CLAT=`echo $OPTARG | awk -F"/" '{print ($3+$4)/2}'` #  of rectangle
+        ;;
+       L) LFILE=$OPTARG
+         ;;
+
+       *) echo "ERROR: unknown modifier flag used (${OPT}), exiting."  # if a bad modifier is used
+           rm $USAGE   
+	   exit 1 ;; # exit with error after removing temp file
+   esac
+done
+
+# check to see if LFILE exists
+if [ ! -e $LFILE ] ; then  # does $LFILE exist?
+	echo "ERROR: $LFILE doesn't exist.  Exiting."
+	rm $USAGE
+	exit 1   # exit with error after removing temp file
+fi
+
+#                       1 2  3 4 5 6 7 8 91011 12  
+awk 'BEGIN{FIELDWIDTHS="4 13 1 2 3 9 1 1 3 3 9 43" }
+     BEGIN{print "# STAT   LON           LAT             RAD"}
+       (NR>1){ {LAT=$4+$5/60+$6/3600; LON=$9+$10/60+$11/3600}                        # convert deg min and sec to deg.decimal
+           {if ($3=="S") LAT=0-LAT}{if ($8=="W") LON=0-LON}                          # correct for S and W as negatives
+           {RAD=(((LAT-CLAT)**2+(LON-CLON)**2)**.5)*111.15}                          # calculate distance
+           if (CSEARCH==1) {                                                         # if using circular search
+             if (CRAD>RAD) printf " %4s %13.8f %13.8f  %13.6f\n", $1, LON, LAT, RAD} # only stations closer than CRAD
+           else {                                                                    # otherwise, a rectangular search
+             if (LAT>LATMIN && LAT<LATMAX && LON >LONMIN && LON <LONMAX)             # only stations within range
+             printf "  %4s %13.8f %13.8f  %13.6f\n", $1, LON, LAT, RAD}        
+    }' CSEARCH=$CSEARCH CLAT=$CLAT CLON=$CLON LONMIN=$LONMIN LONMAX=$LONMAX LATMIN=$LATMIN LATMAX=$LATMAX CRAD=$CRAD $LFILE 
+
+# remove temporary usage file
+ rm $USAGE 
+# exit cleanly
+ exit 0

@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD><TITLE>X-Win32 connections to the Geophysics Linux network</TITLE>
+<base href="http://geophysics.eas.gatech.edu/people/anewman/">
+<link rel="stylesheet" href="css/simple.css" type="text/css">
+</HEAD>
+<BODY bgColor=lightyellow>
+<center>
+<TABLE width=98% border=0 cellpadding=10><TBODY>
+  <TR> <TD align=right>
+     <font size=-1><a href="javascript:window.close()">[X] close window</a></font>
+  </TD></TR>
+<TR> <TD align=Left>
+   <h1>X-Win32:</h1> 
+  <p>
+   <br>
+   <br>
+   <br>
+   <br>
+   <b>Abandon all hope, ye who enter here</b>.  <br>
+   Install a Linux OS on a Virtual Machine (maybe Virtual Box), and proceed as if you're using u/linux.
+   <br>
+   date: Thu Jan 21 10:13:25 EST 2021
+
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+  <p>
+
+    X-Win32: is a windows proram that runs on most versions of the OS, and acts as a gateway to logging into and displaying graphics from
+    UNIX/Linux computers. 
+  <p>
+    After installing the program from <a href=http://software.oit.gatech.edu>OIT</a>, follow these instructions to create a double-hop between 
+    <c>eas-ssh.eas.gatech.edu</c> and <c>masaya.eas.gatech.edu</c> from your machine.  You can switch the second machine for any other on the geophysics 
+    network, depending on your needs.
+
+<p>Please be aware that details may change depending on version of the software and OS. <ol>
+<li> Launch <c>X-Win32</c>.
+
+<li> In the configuration window click <c>'Manual...'</c> on the top right.
+
+<li> Select <c>'ssh'</c> as the Connection Method.
+
+<li> Fill in the <c>"General"</c> tab only for the config.
+ <pre class=screen>
+    Connection name: Masaya through Vorlon
+    Host:   	     eas-ssh.eas.gatech.edu
+    Login:           <r>'your buzzport login'</r>
+    Command:         ssh -X <r>'geophys username'</r>@masaya.eas.gatech.edu -t xterm
+    click save. 
+  <r>NOTE: change red items above</r></pre>
+
+  <li> Right click on connection <c>'Masaya through Vorlon'</c> and click 'Launch'.
+
+<li> Accept and store ssh or askpass key.
+
+<li> Enter first your buzzport password to login to eas-ssh.
+
+<li> Accept and store again any ssh or askpass key.
+
+<li> Enter your local password.  Remember it is only 8 characters.
+
+<li> A terminal window should now appear from <c>masaya</c>.  Please test to make sure you can actively type in it, 
+and display remote windows. Probably the most useful thing to type would be <c>'xterm &amp;'</c> without the quotes, 
+as this will bring up a second window that you can also work in.
+
+<li> To close the terminal windows, just type <c>'exit'</c>.  Once you've closed all windows, the connection should automatically stop.
+
+<li> There is no twelfth step.
+</ol>
+
+<r>Note: If you save the ssh keys, steps 6 and 8 will be skipped for future steps.</r>
+
+<p>For more information look <a href=http://www.google.com>here</a>.
+  </TD></TR>
+  <TR> <TD align=right>
+  <font size=-1>Last Modified:
+Thu Aug  1 10:03:55 EDT 2013
+  </font>
+  </TD></TR>
+</TBODY></TABLE>
+</FORM>
+</center>
+<script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); </script>
+<script type="text/javascript"> var pageTracker = _gat._getTracker("UA-6112466-2"); pageTracker._trackPageview(); </script>
+</BODY></HTML>

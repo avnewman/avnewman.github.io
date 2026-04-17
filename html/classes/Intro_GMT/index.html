@@ -1,0 +1,175 @@
+<html>
+<head>
+  <title>Introduction to GMT Mini-Course Modules</title>
+  <base href="/html/classes/Intro_GMT/">
+  <link rel="stylesheet" href="../../css/simple.css" type="text/css">
+</head>
+<body bgcolor=lightyellow text=black link=darkblue vlink=black alink=lime>
+
+
+
+
+ <center>
+  <table border=0 width=800 cellspacing=5 cellpadding=00>
+  <tr><td align=top>
+ <h2 class="left">Introduction to Generic Mapping Tools (GMT):</h2> <b>mini-course modules (Page 1 of 2)</b>
+<br> by <a href="https://avnewman.github.io">Andrew Newman</a> 
+<table border=0 width=800>
+	<tr><td ></td><td valign=center align=right>
+			<a href=adv_gmt.html><b>Advanced Topics: </b><IMG src=GMTNext.png></a>
+</td></tr></table>
+<hr size=2 color=darkred width=800><!---------------------------------------------------------------------------------------->
+Generic Mapping Tools (hereafter GMT) are a package containing numerous command-line programs useful for generating a wide range
+of figures.  As the name suggests, the tools are particularly well adapted to creating maps and other geo-referenced plots, yet 
+the programs are also useful for creating useful professional figures of almost any type of data.
+<br><br>
+
+Before taking this course it is recommended that you have some familiarity with the UNIX command-line and
+shell scripts (see this <a href=../Intro_Unix/>Introduction to UNIX</a> if necessary).  
+
+<br><br>
+This course is broken up into two sections:<ul>
+<li><a href=#INTRO>Basic Introduction</a> to GMT modules </a>
+<li><a href=adv_gmt.html>Advanced Topics</a> including creating and plotting gridded data (e.g. topography) and 3D plotting, 
+</ul>
+<hr size=2 color=darkred width=800><!---------------------------------------------------------------------------------------->
+<a name=INTRO> <h3>Introduction: </h3>
+<UL>
+<li><b>Getting GMT:</b> GMT is freely available software that is made to work on most all unix platforms, including Mac OS X, and windows under
+<a href="http://x.cygwin.com/" target=aux>cygwin/X</a>.  If you are interested in installing GMT on your own machine, or would like more information about the program, please 
+go check out the <a href="http://gmt.soest.hawaii.edu" target=aux>official website</a>.  To install the program, you will likely also need a C compiler and at least 100 Mb of space.
+<br><br>
+<li<b>Your SHELL environment:</b> I have recently began writing all of my scripts in the <a href=http://en.wikipedia.org/wiki/Bash>'BASH' shell environment</a> since it has become
+the dominant and default environment on most UNIX-based operating systems including Linux, MacOS X and cygwin. Unfortunately, the GMT Tutorial that we will be using, has all scripts 
+written in the <a href="http://en.wikipedia.org/wiki/C_shell">'CSH' shell environment</a>, thus there <i> will</i> be some differences in the way variables are called and some data 
+I/O and redirection.  In general, BASH is a simpler environment and will take only a little work to get used to.
+<br><br>
+<li><b>Setting up environment:</b> On the GT:Geophysics lab machines, your GMT environment should already be correctly identified through the system's <c>/etc/bash.bashrc.local</c>, however you
+should check that this is the case. 
+<br><br>
+<br> Make sure that:
+<ol>
+	<li><c><B>$GMTHOME</b></c> environmental variable is set. To test, type:
+	    <pre class=screen>% echo $GMTHOME
+/usr/local/geophysics/gmt/GMT4.1.3 <c># if you get this response and can see
+                                   # the corresponding directory, you are fine.</c>
+</pre>
+If this doesn't show anything then you will need to have <pre><c> export GMTHOME=/usr/local/geophysics/gmt/GMT4.1.3</c></pre> set in your <c>.bashrc</c>.
+<br><br>
+<li><c><B>$GMTHOME</B></c> is in your 'executable' and 'man' paths.  To test, type:
+           <pre class=screen>% echo $PATH
+.:/home/anewman/bin:/home/anewman/bin/GPS:/home/anewman/bin/SEISMIC:/home/anewman/FE/abaqus/bin:
+/usr/local/geophysics/abaqus/Commands:/opt/intel/fce/9.1.031/bin:/usr/local/bin:/usr/local/geoph
+ysics/gmt/netcdf/bin:/usr/local/geophysics/bin:/usr/local/geophysics/gmt/GMT4.1.3/bin:/usr/local
+/geophysics/CPS/PROGRAMS.330/bin:/opt/bin:/usr/X11R6/bin:/bin:/opt/gnome/bin:/opt/kde3/bin:/usr/
+lib/jvm/jre/bin
+<c># check if the $GMTHOME path followed by '/bin' is here</c>
+% echo $MANPATH
+/home/anewman/man:/opt/intel/fce/9.1.031/man:/usr/local/geophysics/gmt/netcdf/man:/usr/local/geo
+physics/man:/usr/local/geophysics/gmt/GMT4.1.3/man:/opt/man:/usr/local/man:/usr/share/man:/usr/X
+11R6/man:/opt/gnome/share/man
+<c># again, check if the $GMTHOME path followed by '/man' is here</c>
+</pre>
+If the correct path's are not listed then you will again need to add them in your <c>.bashrc</c>. See
+me for details.
+</ol>
+<br><br>
+<li> <b>Manuals:</b> Local copies of the online man pages, tutorial and cookbook are all available here:
+<ul>
+	<li><a href=gmt_www/gmt/gmt_man.html target=aux>man pages</a> (also by typing on command-line, e.g. 'man psbasemap')
+	<li>Tutorial <a href=gmt_www/gmt/doc/pdf/GMT_Tutorial.pdf target=aux>(pdf)</a><a href=gmt_www/gmt/doc/html/tutorial/tutorial.html target=aux>(html)</a>
+	<li>Cook Book <a href=gmt_www/gmt/doc/pdf/GMT_Docs.pdf target=aux>(pdf)</a><a href=gmt_www/gmt/doc/html/GMT_Docs/GMT_Docs.html target=aux>(html)</a>
+</UL>
+<br><br>
+<li><b>Viewing Output:</b> GMT creates vector graphics using the <a href=http://en.wikipedia.org/wiki/PostScript>postscript</a> document and programming language. While, postscript is not a very common data format in windows (for viewing), it has
+long been used by UNIX operating systems, and most networked printers.  Postscript is very similar to Adobe's "Portable Document Format (pdf)" and there are a variety
+of tools available on all platforms for converting them to pdfs.  Generally, within UNIX, we keep the images as postscript, and demark the files with the extension <c>'.ps'</c>.
+In order to view these files, you need to use a program such as <c>gs</c> or <c>gv</c>.  On Windows and Macs, you can also open these files in Adobe Illustrator, or convert them
+to PDF with adobe distiller (both programs cost $$).  Alternatively, if you have cygwin installed on your windows machine, you can convert these figures to PDF using 'ps2pdf' just
+as you can in linux.
+<br><br>
+<li><b>Further help:</b> Further help can be found by searching and reading the <a href=https://listserv.hawaii.edu/archives/gmt-help.html>GMT listserv archive</a>.  If this doesn't 
+answer your problem, you can always sign up and post a question, and hope that someone has a useful answer.
+</ul>
+<hr size=2 color=darkred width=800><!---------------------------------------------------------------------------------------->
+<h3>Our First GMT Script: </h3>
+<UL>
+While GMT programs can be called on the command line, just like most other UNIX programs, it is generally, much more beneficial
+to put the collection of commands in a script.  Doing so will allow you to recreate and modify figures rather quickly as the need 
+arrises.
+<li><b>Script naming:</b> As a convention, I normally name my GMT scripts with the <c>'.gmt'</c> extension.  While, this is not required,
+it would be very beneficial if you were to decide on a naming convention and stick with it.
+<br><Br>
+<li>For our first plot, lets make a simple map of the USA.  I usually set up variables at the beginning of my script so that I can 
+call use them over and over again. Try to recreate <c>USA.gmt</c>
+<pre class=screen>
+#!/bin/bash
+# GMT script to plot the USA
+# AVN
+# Last modified Mon Oct 23 16:46:24 EDT 2006
+
+## DECLARE YOUR VARIABLES HERE ##
+#################################
+  SCALE=18                  # make plot 15 cm across
+  LONMIN=-133. ; LONMAX=-60. # Longitude range of plots
+  LATMIN=20.  ; LATMAX=55. # Latitude range of plots
+  OUTFILE=$0.ps                 # Output file
+#################################
+
+# CREATE A LETTER SIZE BOUNDING BOX
+gmtset PAPER_MEDIA letter PLOT_DEGREE_FORMAT D
+###########################################################
+pscoast -R$LONMIN/$LONMAX/$LATMIN/$LATMAX -JM$SCALE -B10a20WSen -Dl -Na -A1000 -W2 -Y10 -X2 -P > $OUTFILE
+
+exit 0
+</pre>
+<li><b>Run Script:</b> After making the file executable using '<c>chmod</c>', run the script by simply typing:
+<pre class=screen>
+% USA.gmt   <c># if there is no output to the shell, then the program likely worked</c>
+</pre>
+<li><b>View results:</b> using either 'gs' or 'gv' we can view the newly created postscript file by typing:
+<pre class=screen>
+% gv USA.gmt.ps   <c># type 'q' on gv window to quit</c>
+<c># or </c>
+% gs USA.gmt.ps   <c># type 'quit' on GS> prompt within shell window to quit</c>
+</pre>
+This can also be added to the gmt script to bring the plot up automatically.
+<li><b>Files created:</b> While it may appear that only a new postscript file was created, using the '-a' flag with
+'ls' will reveal that an additional two files were created.<ul>
+<li><b>.gmtcommands4</b>: This file contains a list of gmt command modifiers (flags and arguments) that can be used the 
+next time a GMT program is called. This is only useful for a few of the most common flags, including B, J, R, X, Y.  This may be 
+better explained in the <a href=gmt_www/gmt/doc/html/GMT_Docs/node46.html target=aux>online documentation</a>.
+<br><br>
+<li><b>.gmtdefaults4</b>: This file is read and potentially modified or recreated every time a GMT command is run.  The file contains a
+bunch of information that describes how you want your output to look.  In the above example, we explicitly stated that we wanted
+the figure to go on letter sized paper and that our degrees are marked with floating point degrees (decimal degrees with as many zeroes as necessary).<br>
+Note that often if your figure is of the wrong size or otherwise misbehaving in odd ways, it may be because of a different locally set .gmtdefaults4 file.
+You can put a copy of this file in your home directory, which the program should read before creating a figure.
+</ul>
+</ul>
+<hr size=2 color=darkred width=800><!---------------------------------------------------------------------------------------->
+<h3>Script Modification: </h3>
+<UL>
+The rest of this will be done in class.  I plan on showing you other conventions that I use to make GMT scripting easier, as well
+as working with you on a couple of the examples.
+</UL>
+<hr size=5 color=darkred width=800><!---------------------------------------------------------------------------------------->
+<table border=0 width=800>
+	<tr><td ></td><td valign=center align=right>
+			<a href=adv_gmt.html><b>Advanced Topics: </b><IMG src=GMTNext.png></a>
+</td></tr></table>
+   <center>
+   <hr width=800><!-- ________________________________________________________ -->
+   <font size=2><a href=https://avnewman.github.io>Home</a> |  
+   <font size=2 color=darkblue> <I>anewman<IMG src=../../pics/at.gif>gatech.edu</I></font> |
+   <font size=2 color=darkblue><I> Updated: 
+Mon Nov 13 12:30:39 EST 2006
+   </I></font>
+   </center>
+</td> </tr> </table>
+</center>
+<script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); </script>
+<script type="text/javascript"> var pageTracker = _gat._getTracker("UA-6112466-2"); pageTracker._trackPageview(); </script>
+
+</body>
+</html>

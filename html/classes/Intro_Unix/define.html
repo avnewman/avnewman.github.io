@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>SHELL- DEFINE</title>
+  <base href="http://geophysics.eas.gatech.edu/people/anewman/">
+    <link rel="stylesheet" href="css/simple.css" type="text/css">
+</head>
+<body>
+<body bgcolor=lightyellow text=black link=darkblue vlink=black alink=lime>
+ <center>
+<table border=0 width=800 cellspacing=5 cellpadding=00>
+<tr><td align=top>
+
+<h1 class="left">define: a google-based web dictionary
+on the command line</h1>
+by <a href="">Andrew Newman</a> 
+<p>
+One of a series of example shells:
+</p>
+<p>
+This contribution is a <i>wonderful</i> little script to call up <a
+href="http://www.google.com">Google's</a> web dictionary, strip off
+unnecessary information, reformat it a bit, and display definitions sized
+to your current terminal settings
+</p>
+<br>
+<b>define:</b>
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<PRE><code class="screen"><c>#!/bin/bash 
+# program define
+# version 1.0  
+# written by Andrew V. Newman
+# last modified Fri Mar  5 07:27:17 MST 2004
+
+# Shell script to bring up google based definitions for any compound or simple word 
+
+# Checks to see if you have a word in mind or just typing in the command. If the latter,
+# it will give you a short usage and example before exiting with error code 1. </c>
+if [ ${#} -lt "1" ]; then
+   echo "Usage: `basename $0` 'TRM' "
+   echo "   where TRM is the word that you would like defined"
+   echo "   Examples:"
+   echo "     `basename $0` Fedora"
+   echo "     `basename $0` shell script"
+   echo "    or:"
+   echo "     `basename $0` google"
+   exit 1
+fi
+
+<c># Use 'resize' to correctly set the environmental variables for your terminal 
+# (this may not work for all terminals). </c>
+  eval `resize -u` 
+
+<c># Set the lynx program to your current term width (doesn't do it by 
+# default if being piped directly into another file), and turn off the 
+# default justification (can make output UGLY). </c>
+  LYNX="/usr/bin/lynx -justify=0 -width=$COLUMNS"
+
+<c># Set your 'more' or 'less' favorite pager.</c>
+  PAGER=/bin/more
+  PAGER=/usr/bin/less
+
+<c># Sets a URL BASE assuming multiple variables as a compound word.  The
+# way WORD is defined, it will replace all the blank spaces with the URL
+# equivalent of a blank '%20'. </c>
+  WORD=` echo ${@} | sed  's/\ /\%20/g'`
+
+<c># Define the google URL to search for the definition. </c>
+  URL=http://www.google.com/search?q=define:$WORD 
+
+<c># Call up the google search in lynx and dump the output to a temp file
+# and all stderr to /dev/null . </c>
+  $LYNX $URL -dump 2> /dev/null >define.tmp
+  
+<c># Displays definition after stripping off unnecessary text before and 
+# after the definitions (the first sed command only prints lines 
+# between the line containing 'Definition' and the line containing 
+# '_____', inclusive.  Then it pipes it through a second sed command 
+# which replaces the 'lynx' URL numbers with 'WEB:', before piping it 
+# through a third sed command that wipes out that last line.  Finally
+# the information is piped to a pager command which lets you page 
+# through the text on-screen with the space bar. </c>
+  sed -n '/[dD]efinition/,/_____/p' define.tmp | \
+     sed '/\[[0-9][0-9]\]/s//   WEB: /' |\
+     sed '/____/d' | $PAGER
+
+<c># Remove temporary file. </c>
+  rm define.tmp
+<c># Exit cleanly. </c>
+  exit 0
+</font></screen></PRE>
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<p>A copy of this script exists in <code><c> /home/anewman/bin/define</c></code> on <code><c>terremoto</c></code>
+<br>
+<br>
+Once you have finished creating this file all you need to do is:
+<UL>
+    <li>Change permissions of the file so that you can execute it:<br>
+    <code class="screen">% chmod 755 define</code>
+    <li>Move file to a directory in your path:<br>  I would suggest creating a bin directory from your home for all
+    shells and then making certain it is included in your path.
+    <code class="screen">% mkdir ~/bin<br>% mv define ~/bin/ </code>
+    If it is not already there, add the following line to ~/.cshrc if you are using a csh or tcsh shell
+    <code class="screen"> path = ( $path ~/bin) </code>
+    Or, if you are using bash add the following line to ~/.bashrc
+    <code class="screen"> PATH=$PATH:~/bin </code>
+</UL>
+<p>
+I must say, there are other very wonderful and more robust dictionary tools 
+available for Linux, including graphical 'kdict', and 'gnome-dictionary' 
+which are both front-ends to 'dict'.  The advantage to 'define' and 'dict' 
+are that you can run them straight from the command line and you do not need
+to worry about bringing up another window which can slow you down, especially 
+if you are plugged in remotely.  I would not say that 'define' is in any way 
+better than 'dict', it just accesses another dictionary and may give you a 
+definition more suiting your needs.</p>
+<p>
+OK, with that said, try out the examples in the header:</p> 
+
+<code class="screen">
+	% define geophysics <br>
+        % define shell script <br>
+        % define bash <br>
+</code>
+</p>
+   <center>
+   <hr width=800><!-- ________________________________________________________ -->
+   <font size=2><a href=http://geophysics.eas.gatech.edu/people/anewman/classes/Intro_Unix/>Course Home</a> |<font size=2 color=darkblue> <I>anewman<IMG src=http://geophysics.eas.gatech.edu/people/anewman/pics/at.gif>gatech.edu</I></font> | <font size=2 color=darkblue><I>Updated:
+Mon Sep 18 17:48:48 EDT 2006
+   </I></font>
+   </center>
+</td> </tr> </table>
+</center>
+
+<script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); </script>
+<script type="text/javascript"> var pageTracker = _gat._getTracker("UA-6112466-2"); pageTracker._trackPageview(); </script>
+</body>
+</html>
+

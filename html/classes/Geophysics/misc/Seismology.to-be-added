@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<HTML lang="en">
+<head>
+   <TITLE>Seismology</TITLE>
+   <base href="http://geophysics.eas.gatech.edu/classes/Geophysics/">
+   <link rel="stylesheet" href="css/simple.css" type="text/css">
+</head>
+<body bgcolor=lightyellow text=black link=darkblue  vlink=black alink=lime>
+  <center>
+    <table border=1 width=800 cellspacing=5 cellpadding=00>
+      <tr><td align=center>
+   <h2>Seismology</h2>
+        <table align=left width=650 cellspacing=5>
+          <tr> <td>
+           <hr><!-------------------------------------------->
+            <B>09/19/16:</B><ul>
+		 <li> <a href=http://insight.jpl.nasa.gov/overview.cfm> Mars InSIGHT mission:</a><br>
+		 	A mission to newly instrument Mars with new seismometers, heatflow sensors, and reflectors for geodetic imaging.
+		        If on track, the lander will be sending back its first data in October 2016.
+			<br><br>
+    	         <li> Body Waves: P and S waves<br>
+    	           <a href=misc/pics/SW_2_4_03_PSwaves.jpg><img src=misc/pics/SW_2_4_03_PSwaves_sm.jpg></a><br>
+    	           P and S waves are the two fundamental elastic waves that are generated during an earthquake.
+		   fit between Africa and South America (figure from Stein and Wysession, 2003).
+		   <br><br>
+    	         <li> Separation of Arrivals on Seismogram<br>
+    	           <a href=misc/pics/SW_2_7_01_PSSurface.jpg><img src=misc/pics/SW_2_7_01_PSSurface_sm.jpg></a><br>
+			(figure from Stein and Wysession, 2003)
+		   <br><br>
+    	         <li> Seismic Wave Propagation through Earth<br>
+    	           <a href=misc/pics/BodyWavesEarth_3_5_05.jpg><img src=misc/pics/BodyWavesEarth_3_5_05_sm.jpg></a><br>
+		   (figure from Stein and Wysession, 2003).
+		   <br><br>
+		 <li> Because different waves travel different paths and speeds, their arrivals change and direct waves become more spread out 
+		     at greater distances (a.k.a. moveout).
+    	           <a href=misc/pics/WavePropagation.jpg><img src=misc/pics/WavePropagation_sm.jpg></a><br>
+		   (figure from www.iris.edu).
+		   <br><br>
+    	         <li> Global Predicted Arrival Time Table<br>
+    	           <a href=misc/pics/TTimes.gmt.png><img src=misc/pics/TTimes.gmt_sm.png></a><br>
+		   Figure shows the predicted arrival of earthquake seismic phases at locations around the world.
+             </ul>   
+          </td> </tr>
+
+          <tr> <td>
+           <hr><!-------------------------------------------->
+            <B>09/23/16:</B><ul>
+    	         <li> Surface Waves: Love and Rayleigh waves<br>
+    	           <a href=misc/pics/Love_wave.jpg><img src=misc/pics/Love_wave_sm.jpg></a><br>
+    	           <a href=misc/pics/Rayleigh_wave.jpg><img src=misc/pics/Rayleigh_wave_sm.jpg></a><br>
+		   Surface waves develop from trapped compressional and shear waves along the surface of the earth.
+		   For most earthquakes, it is these later phases that cause the most damage. (figure from Fowler, 2005).
+             </ul>   
+          </td> </tr>
+	   <tr> <td>
+            <hr><!-------------------------------------------->
+             <B>09/26/16:</B><ul>
+	        <li> <a href=misc/beachballs.pdf> Earthquake Focal Mechanisms as beachballs</a><br>
+		<li>Gutenberg-Richter Power-law distibution (b-value) <br>
+		 <a href=misc/pics/4_7_01_GR.png><img src=misc/pics/4_7_01_GR_sm.png></a>
+		 <li> Relation between b-value and moment release<br>
+		 <a href=misc/pics/Mos2_b2.png><img src=misc/pics/Mos2_b2_sm.png></a><br>
+		 The relative distribution of seismic moment with magnitude depending on the power-law order (b-value) of a seismicity distribution.
+             </ul>   
+          </td> </tr>
+	   <tr> <td>
+            <hr><!-------------------------------------------->
+             <B>09/28/16:</B><ul>
+    	         <li> Seismic Wavefronts through the Earth<br>
+    	           <a href=misc/pics/Body_wave_Mantle.png><img src=misc/pics/Body_wave_Mantle_sm.png></a><br>
+    	           Illustration of wavefronts (orthogonal to ray-path) of seismic shear waves through the mantle. <br><br>
+    	         <li> Bulk Earth Structure through Seismic Velocities<br>
+		     <table><tr>
+		         <td width=50%><a href=misc/pics/Prem_visualized.png><img src=misc/pics/Prem_visualized_sm.png></a></td>
+			 <td width=50%><a href=misc/pics/prem_earth.png><img src=misc/pics/prem_earth_sm.png></a></td>
+	 	     </tr></table>
+    	           Laterally averaged compressional and shear wave velocities and derived density structure through the earth. <br><br>
+    	         <li> Whole Mantle Tomography (a refraction method): Slabs to the core<br>
+    	           <a href=misc/pics/Slabs2CMB_Japan_CentralAmerica.png><img src=misc/pics/Slabs2CMB_Japan_CentralAmerica_sm.png></a><br>
+		   Shown here are two global tomographic images that suggest a relative fast (cold) feature extending to the earth's core. It is 
+		   widely believed that these are subducted slabs, and are highly suggestive of whole mantle convection (as apposed to multi-layer convection cells). <br><br>
+    	         <li> Inner Core Rotation<br>
+    	           <a href=misc/pics/innercore_rotation.png><img src=misc/pics/innercore_rotation_sm.png></a><br>
+    	           Using repeated ray-paths from earthquakes and seismometers that travel through the inner core, we can now identify a differential rotation. <br><br>
+
+    	         <li> Seismic Reflection: Single flat layer<br>
+    	           <a href=misc/pics/reflection_flat.png><img src=misc/pics/reflection_flat_sm.png></a><br> (figure from Stein and Wysession, 2003). <br><br>
+    	         <li> Seismic Reflection: Single Syncline<br>
+    	           <a href=misc/pics/reflection_syncline.png><img src=misc/pics/reflection_syncline_sm.png></a><br>
+		   Non-regular subsurface layers can create highly irregular paths, and may be difficult to reconstruct. In the example of 
+		   a syncline, ray-paths will become focused toward the axis of folding, while an anticline will have ray-paths focus away from the folding axis (figure from Stein and Wysession, 2003). <br><br>
+
+    	         <li> Seismic Reflection Profile<br>
+    	           <a href=misc/pics/Reflection_Profile_w_interpretation_riftfeatures_wLakeSuperior.png><img src=misc/pics/Reflection_Profile_w_interpretation_riftfeatures_wLakeSuperior_sm.png></a><br>
+		   Example seismic profile, showing deep crustal structure in the central North American continental crust.  Features of deep crustal faults are barely 
+		   visible to the naked eye.  It takes reflection seismology experience, structural geology training, and sometimes a good <strike> imagination</strike> ability
+		   to interpolate and extrapolate to develop interpretations. <br><br>
+    	         <li> 3D: Reflection Seismology<br>
+    	           <a href=misc/pics/3D_Salt_Dome.jpg><img src=misc/pics/3D_Salt_Dome_sm.jpg></a><br>
+    	           Schematic illustration of 3D illumination of a salt diapir (salt dome), which is a structure that is highly beneficial for trapping natural gas and oil.<br><br>
+             </ul>   
+          </td> </tr>
+
+	   <tr> <td>
+            <hr><!-------------------------------------------->
+             <B>10/03/16:</B><ul>
+    	         <li> Seismic Anisotropy<br>
+		 <a href=http://www.victoria.ac.nz/geo/research/tectonics/seismic-anisotropy/figures/splits.gif><img src=misc/pics/splits.gif></a><br>
+		 An arbitrarily oriented shear wave can be split into two new and (presumably) orthogonal shear waves that travel along faster and slower
+		 paths.  The source of shear anisotropy may be structural, stress-related, or induced by dynamic flow, with fast directions oriented along the path of flow.
+		<br>
+		<li> <a href=misc/pics/Hoernle_etal_Nature_2009FigS1.png><img src=misc/pics/Hoernle_etal_Nature_2009FigS1_sm.png></a><br>
+		 Recent results in Central America showing both trench normal flow of the subducting slab, and trench parallel flow of the
+		 overlying 'mantle wedge' [Hoernle et al., Nature, 2009].
+		 <li> <a href=http://ds.iris.edu/ds/products/sws-dbs/>IRIS Shear-Wave Splitting Database!</a><br>
+		 <a href==misc/pics/sws-db-mst_circular.jpg> <IMG src=misc/pics/sws-db-mst_circular_sm.png><br></a>
+		 Magnitude is shown by length of bar, while orientation is shown by color.  Many SWS fast directions are oriented along the absolute plate motion direction of the North American Plate (WSW-ENE), but signficiant outliers remain including a large apparent deflection in the central Basin and Range.
+    	                      </ul>   
+          </td> </tr>
+          <tr><td align=center> 
+            <hr ><!-- ________________________________________________________ -->
+              <font size=2><a href=http://geophysics.eas.gatech.edu/classes/Geophysics/misc>Intro. to Geophysics: Supp.</a> | <a href=http://geophysics.eas.gatech.edu/classes/Geophysics/>Intro. to Geophysics: Home</a> | <I>Updated: 
+Mon Sep 26 14:01:38 EDT 2016
+              </I> </font>
+          </td></tr>
+        </table>
+      </td></tr>
+    </table>
+  </center>
+  <script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); </script>
+  <script type="text/javascript"> var pageTracker = _gat._getTracker("UA-6112466-2"); pageTracker._trackPageview(); </script>
+</body>
+</HTML>

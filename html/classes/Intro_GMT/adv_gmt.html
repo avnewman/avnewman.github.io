@@ -1,0 +1,371 @@
+<html>
+<head>
+  <title>Introduction to GMT Mini-Course Modules</title>
+  <base href="/html/classes/Intro_GMT/">
+  <link rel="stylesheet" href="../../css/simple.css" type="text/css">
+</head>
+<body bgcolor=lightyellow text=black link=darkblue vlink=black alink=lime>
+
+
+
+
+ <center>
+  <table border=0 width=800 cellspacing=5 cellpadding=00>
+  <tr><td align=top>
+ <h2 class="left">Introduction to Generic Mapping Tools (GMT):</h2><b> mini-course modules (Page 2 of 2)</b>
+<br> by <a href="https://avnewman.github.io">Andrew Newman</a> 
+<table border=0 width=800>
+	<tr><td valign=center align=left>
+			<a href=index.html><IMG src=GMTBack.png><b>Introduction: </b></a>
+</td><td ></td></tr></table>
+<hr size=2 color=darkred width=800><!---------------------------------------------------------------------------------------->
+<h3><i>Better</i> GMT scripts: </h3>
+<UL>
+While it is perfectly fine to create gmt shell scripts that explicitely call functions and files over and over again,
+it is not usually the best practice.  This is particularly the case if you will be either working with the file for a while,
+making it generally useful for a range of applications, or even if you want to decipher your work years down the road.
+<br>
+Thus, I argue that it would be much beter to organize your scripts such that only minimal changes are necessary
+when you modify the original code for a new use.
+<br><br>
+<b>
+<li>Basic rules:</b>
+<ol><li>Give the program an appropriate, unique and simple name.  This is much more difficult than it sounds since
+    you may inadvertently give your script the same name as another program that already exists on the system. As well,
+    your program may change purpose over the life of its development, and the old name may no longer be appropriate.
+    <br> It is a good idea to give gmt scripts either a prefix or suffix of 'gmt'.  I prefer using the .gmt suffix.<br><br>
+    <li>All user-defined variables are named at top.
+     Fields that should really be written as variables include:<ul>
+         <li>Any existing or created data file (this includes the image file).
+         <li>Any <i>non-standard</i> program.  I would classify any program that does not sit 
+             in /usr/bin/ or  $GMTHOME/bin/  as being non-standard. This would include programs i
+             that were written by you or another within the lab.  This is particularly true if you are 
+             calling a specific program that was written for the problem at hand.
+             
+         <li>Geographic coordinates of plots and scaling variables.
+         <li>Repetative modifier flags called by GMT.  These include, -R, -J, -O, -K.
+     </ul><br>
+    <li>Brief header that explains the author, date last modified (and possibly created) and
+        usage.  The usage can be ommitted if the program is painfully straight-forward, or is already
+        included in a usage output.<br><br>
+    <li>Comment, comment, comment.  Believe me when I say, it may make sense today or tomorrow, but it is usually
+        near-impossible to decipher 10 year old code that is not adequately commented.<br><br>
+</ol>
+<li><b>Example:</b><br>
+<c>Gulf_seismicity.gmt</c> is an example of a very simple script, but useful script.  People on the
+local geophysics system can copy this file and the referenced files from ~anewman/GMT_Tutorial/Gulf/:
+<pre class=screen>
+#!/bin/bash
+# GMT script to plot Gulf Coast Seismicity
+# AVN
+# Last modified Mon Sep 11 20:56:16 EDT 2006
+
+## DECLARE YOUR VARIABLES HERE ##
+#################################
+  SCALE=17                   # scale of overall plot
+  LONMIN=-95; LONMAX=-80. # Longitude range of plots
+  LATMIN=20  ; LATMAX=36. # Latitude range of plots
+  OUTFILE=`basename $0`.ps                 # Output file
+  RANGE="-R$LONMIN/$LONMAX/$LATMIN/$LATMAX"
+  PROJ="-JM${SCALE}"
+  BGN="$RANGE $PROJ -K"
+  MID="$RANGE $PROJ -O -K"
+  END="$RANGE $PROJ -O"
+#################################
+  EQS=EQs_gulf.txt
+  CPTTOPO=$GMTHOME/share/cpt/GMT_relief.cpt   # a default GMT cpt
+  TOPOGRD=Gulf.grd      # created here
+  STATIONS=~anewman/seismic/stations/station_comma_list.asc
+################################
+
+# CREATE A LETTER SIZE BOUNDING BOX
+  gmtset PAPER_MEDIA letter+  PSIMAGE_FORMAT bin BASEMAP_TYPE plain  PLOT_DEGREE_FORMAT D ANOT_FONT_SIZE 16
+###########################################################
+  pscoast -B2a5WSen  -Dc -W1/255 -Y5 -X3 -P $BGN > $OUTFILE
+
+ # .PLOT TOPO/BATH
+    grdraster 1 $RANGE -G$TOPOGRD -V
+    grdgradient $TOPOGRD -G$TOPOGRD.grad -A10 -Ne0.6
+    grdimage  $TOPOGRD -C$CPTTOPO -I$TOPOGRD.grad -Ts  $MID >>$OUTFILE
+ # PLOT COASTLINE
+   pscoast -Di -N2/10 -I1/2/200/255/255 -I2/1/200/255/255 -Ia/.5/200/255/255 -W2  $MID >>$OUTFILE
+   psscale  -D8/-2/16/.2h  -B1000a2000 -C$CPTTOPO -I  -O -K >>$OUTFILE
+
+ # PLOT EARTHQUAKES
+   # NEIC EVENTS
+     awk 'BEGIN{FIELDWIDTHS="7 4 5 3 10 7 8 4 5 6 5 2 8"}
+           $1!~"#"{print $7,$6,2**($9-MMIN+0.5)/70 }' MMIN=$MMIN $EQS |\
+        psxy $MID -Sc -W1/0 -G255/255/0 >>$OUTFILE
+
+    # plot up Atlanta
+    echo -n "-84.389 33.749  Atlanta " |\
+             psxy $MID -Sc0.3 -W4/0 -G0/255/255  >>$OUTFILE
+
+   pstext -N $END <<.....END >>$OUTFILE
+       `echo $LONMIN $LONMAX $LATMAX | awk '{print ($1+$2)/2,$3+1 }'` 24 0 0 2 Gulf Region Seismicity
+       `echo $LONMIN $LONMAX $LATMAX | awk '{print ($1+$2)/2,$3+.5 }'` 16 0 0 6 Catalog: NEIC 1973-present
+       `echo $LONMIN $LONMAX $LATMIN | awk '{print ($1+$2)/2,$3-1.3 }'` 15 0 0 6 Elevation [m]
+       `echo $LONMIN $LONMAX $LATMIN | awk '{print ($1+$2)/2+3,$3-3 }'` 11 0 2 1 `date`
+.....END
+
+# PUT HIDDEN STAMP IN FILE THAT WILL DENOTE ITS SOURCE
+  echo " %% created by ${USER} using ${HOST}:${PWD}/$0 $* " >>$OUTFILE
+
+# BRING UP PLOT
+  gs   $OUTFILE
+#  exit 0
+#pstoimg -scale 2 $OUTFILE
+#scp $0.png shadow:public_html/temp/
+exit 0
+</pre>
+</UL>
+<hr size=2 color=darkred width=800><!---------------------------------------------------------------------------------------->
+<h3>Viewing 3-D data (e.g. topography): </h3>
+<UL>
+<li>In the previous section, the example script had already called up and plotted some existing topographic data.
+For most images at this scale, or for larger regions, we have on the GT geophysics network, sufficiently adequate land-based and oceanographic data
+ already linked to the gmt program <c>grdraster</c> that we can use to create gmt grid files for specific regions.<br><br>
+<li>To find the types and resolution of data that are currently archived type <c>grdraster</c> with no arguements.
+<pre class=screen>
+<c>...</c>
+#	Data Description	Unit	Coverage		Spacing	Registration
+------------------------------------------------------------------------------------
+1 "ETOPO2 global topography"	"m"	-R-180/180/-90/90  	-I2m		P
+2 "ETOPO5 global topography"	"m"	-R0/360/-90/90	        -I5m		P
+3 "Geosat/Seasat gravity from Haxby"	"mGal"	-R0/360/-90/90	-I5m		G
+4 "Geosat/Seasat geoid from Haxby"	"m"	-R0/360/-90/90	-I5m		G
+20 "GLOBE LAND 30sec Topography" "m"    -R-180/-90/50/90        -I0.5m          P
+21 "GLOBE LAND 30sec Topography" "m"    -R-90/0/50/90           -I0.5m          P
+22 "GLOBE LAND 30sec Topography" "m"    -R0/90/50/90            -I0.5m          P
+23 "GLOBE LAND 30sec Topography" "m"    -R90/180/50/90          -I0.5m          P
+24 "GLOBE LAND 30sec Topography" "m"    -R-180/-90/0/50         -I0.5m          P
+25 "GLOBE LAND 30sec Topography" "m"    -R-90/0/0/50            -I0.5m          P
+26 "GLOBE LAND 30sec Topography" "m"    -R0/90/0/50             -I0.5m          P
+27 "GLOBE LAND 30sec Topography" "m"    -R90/180/0/50           -I0.5m          P
+28 "GLOBE LAND 30sec Topography" "m"    -R-180/-90/-50/0        -I0.5m          P
+29 "GLOBE LAND 30sec Topography" "m"    -R-90/0/-50/0           -I0.5m          P
+30 "GLOBE LAND 30sec Topography" "m"    -R0/90/-50/0            -I0.5m          P
+31 "GLOBE LAND 30sec Topography" "m"    -R90/180/-50/0          -I0.5m          P
+32 "GLOBE LAND 30sec Topography" "m"    -R-180/-90/-90/-50      -I0.5m          P
+33 "GLOBE LAND 30sec Topography" "m"    -R-90/0/-90/-50         -I0.5m          P
+34 "GLOBE LAND 30sec Topography" "m"    -R0/90/-90/-50          -I0.5m          P
+35 "GLOBE LAND 30sec Topography" "m"    -R90/180/-90/-50        -I0.5m          P
+49 "Valles Caldera DEM"         "m"     -R-107.02236110967274/-105.95541666514295/35.47847222130059/36.33847222136939 -I0.00027777777780 P
+50 "Valles Caldera DEM"         "m"     -R-106.8188888889000054/-106.1352777777999989/35.6274999999999977/36.1655555555599975 -I0.000277777778 P
+51 "Long Valley Caldera DEM"    "m"     -R-119.2150000000000034/-118.5319444443999970/37.3808333333300027/37.8780555555600031 -I0.000277777778 P
+52 "Mono Lake DEM"              "m"     -R-119.2150000000000034/-118.5319444443999970/37.7963888888900001/38.3500000000000014 -I0.000277777778 P
+53 "Socorro Magma Body SRTM 90" "m"     -R-107.49958350017612/-106.24925102888836/33.49958476895157/34.99981713456733 -I0.00083299964776 P
+54 "Socorro Magma Body SRTM 30" "m"     -R-107.49994673943088/-106.24970424822282/33.49961486302111/35.00012806842123 -I0.0002777699380 P
+55 "Eastern CA E of LVC"	"m" 	-R-119.49986111267101/-117.24986111249101/36.49986111195111/37.99986111207111 -I0.00027777777780 P
+56 "Long Valley  DEM larger"    "m"     -R-119.51291666625222/-118.13041690001085/37.03125043857333/38.33013910784089 -I0.00027777773081 P
+<c>...</c>
+</pre>
+You will see that there is currently 2 global topography files (ETOPO2,5), global gravity and geoid data.
+As well, there are a series of 16 data segments that pertain to high resolution (30 second) topography available
+for land (there is no sea-floor bathymetry at this level).
+<br><br>
+<li><b>Interactive Example (overlaying higher resolution data, where available):</b><br>
+Lets zoom in and add a second, higher resolution land surface plot over the existing land data, but retain the 2minute gulf bathymetry.
+<ol><li>Shrink the original <c>Gulf_seismicity.gmt</c> to just a 5<sup>o</sup>x5<sup>o</sup> grid in the SE section (from -85/-80<sup>o</sup>E and 20/25<sup>o</sup>N).
+     <li> Create a second grid for the region, that will plot on top of (after) the first grid, using <c>grdraster</c> and the appropriate 30 second topography. Since this is a large region
+     <li> Create an illumination grid using <c>grdgradient</c>.
+     <li> Use <c>grdimage</c> with the new grd and grad files and the <c>-Ts</c> flag to overlay the new topography.
+     <li> Run the example and check if you have high resolution data for Cuba and lower resolution bathymetry.<br>
+     <hr align=left width=100 size=1>
+     <li> Now, comment out the illumination created with <c>grdgradient</c> and  remove the <c>-I</c> flag in <c>grdimage</c>. Re-run your script.
+      See how flat the topography now looks.
+     <br>
+     <li> For reference, specialized grid masking can be done with a seperate GMT tool called (you guessed it) <c>grdmask</c>. See the man pages for details.
+</ol>
+<hr align=left width=100 size=1><!-- -------- -->
+<li><b>Interactive Example (perspective view):</b><br>
+Now, lets look at a similar gmt script for the region, but with a 3D perspective view. A
+few notable things have been changed:<ol>
+     <li>Added $ZMIN and $ZMAX to $RANGE
+     <li>Added $ZPROJ, $ZSCALE  and $ELEV to the $BGN $MID and $END variables. These create the
+         vertical exaggeration and the look angle of the plot.
+     <li>removed some text and other plotting that may look wierd on this plot.
+     <li>Replaced <c>grdimage</c> with <c>grdview</c>.
+</ol>
+<pre class=screen>
+#!/bin/bash
+# GMT script to plot Gulf Coast Seismicity
+# AVN
+# Last modified Mon Sep 11 20:56:16 EDT 2006
+
+
+## DECLARE YOUR VARIABLES HERE ##
+#################################
+  SCALE=15                   # scale of overall plot
+  LONMIN=-85; LONMAX=-80. # Longitude range of plots
+  LATMIN=20  ; LATMAX=25. # Latitude range of plots
+  ZMIN=-4000;ZMAX=2000
+  OUTFILE=`basename $0`.ps                 # Output file
+  RANGE="-R$LONMIN/$LONMAX/$LATMIN/$LATMAX/$ZMIN/$ZMAX"
+  PROJ="-JX${SCALE}"
+  ZSCALE=3.
+  ZPROJ="-JZ${ZSCALE}"
+  ELEV="-E200/20"   # orientation
+  BGN="$RANGE $PROJ $ZPROJ $ELEV -K"
+  MID="$RANGE $PROJ $ZPROJ $ELEV -O -K"
+  END="$RANGE $PROJ $ZPROJ $ELEV -O"
+#################################
+  EQS=EQs_gulf.txt
+  CPTTOPO=$GMTHOME/share/cpt/GMT_relief.cpt   # a default GMT cpt
+  TOPOGRD=Gulf.grd      # created here
+  STATIONS=~anewman/seismic/stations/station_comma_list.asc
+################################
+
+# CREATE A LETTER SIZE BOUNDING BOX
+  gmtset PAPER_MEDIA letter+  PSIMAGE_FORMAT bin BASEMAP_TYPE plain  PLOT_DEGREE_FORMAT D ANOT_FONT_SIZE 16
+###########################################################
+  pscoast -B0.5a1WSen  -Dc -W1/255 -Y5 -X3 -P $BGN > $OUTFILE
+
+ # .PLOT TOPO/BATH
+    grdraster 1 $RANGE -G$TOPOGRD -V
+    grdgradient $TOPOGRD -GIllum.grd  -A10 -Ne0.6
+    grdview  $TOPOGRD -C$CPTTOPO   -IIllum.grd -Qs100  $END >>$OUTFILE
+
+# PUT HIDDEN STAMP IN FILE THAT WILL DENOTE ITS SOURCE
+  echo " %% created by ${USER} using ${HOST}:${PWD}/$0 $* " >>$OUTFILE
+# BRING UP PLOT
+  gs   $OUTFILE
+exit 0
+
+</pre>
+</UL>
+<hr size=2 color=darkred width=800><!---------------------------------------------------------------------------------------->
+<h3>Resources for some geographic data: </h3>
+<UL>
+
+<li><B>ETOPO2 and ETOPO5:</b>
+These are global 2 and 5 minute combined topography and bathymetry grids.  They are already loaded and can
+be directly called from gmt using grdraster (# 1 and 2).
+<li><B>Geosat/Seasat Gravity:</b> <br>
+<a href=http://www.ngdc.noaa.gov/seg/gravity/document/html/haxby.shtml>http://www.ngdc.noaa.gov/seg/gravity/document/html/haxby.shtml</a>
+<br>This is global 5 minute satellite derived topography.  It is already loaded and can be directly called from gmt using
+grdraster (#3).
+<li><B>Geosat/Seasat Geoid:</b><br> 
+<a href=http://cddisa.gsfc.nasa.gov/926/egm96/egm96.html>http://cddisa.gsfc.nasa.gov/926/egm96/egm96.html</a>
+<br>This is a derived 1 degree global geoid height as referenced by either the ellipsoid or sea surface height.  The
+data are stored as grid files in the <c>$GMTHOME/share/dbase/</c> directory and named <c>egm360.e.grd</c> and <c>egm360.h.grd</c>.
+<li><B>Sea Floor Age:</b> <br>
+<a href=http://www.geosci.usyd.edu.au/research/marinegeophysics/Resprojects/Agegrid/digit_isochrons.html>http://www.geosci.usyd.edu.au/research/marinegeophysics/Resprojects/Agegrid/digit_isochrons.html</a>
+<br>This is a derived 0.1 degree global sea floor age model.  The data are stored as a grid file in the <c>$GMTHOME/share/dbase/</c> directory and named <c>age_1.6.grd</c> .
+<li><B>GTOPO 30:</b><br> 
+<a href=http://edcdaac.usgs.gov/gtopo30/gtopo30.html>http://edcdaac.usgs.gov/gtopo30/gtopo30.html</a>
+<br>This is a global satellite derived land-surface model at 30-arc second (~0.9 km) spacing.  The data are stored locally and can be directly called 
+from gmt using grdraster (#20-35).  Note that the data are seperated by quadrants, thus your area of interest my need to be 
+seperately stitched together within GMT.
+<li><B>SRTM data:</b> 
+<br>The Shuttle Radar Topography Mission, collected extremely high resolution (30 m) topography across land masses
+in late February, 2000.
+ Much of the below
+list is taken from <a href=http://www.terrasource.net>here</a>.<br>
+More information about using the data within GMT is available <a href=http://seismo.berkeley.edu/~lhsu/help/srtm2grd_readme.txt>here</a>. 
+    <ol>
+      <li>Via <A href="http://seamless.usgs.gov/" target=_blank>clickable web map 
+      interface</A> (International viewer, http://seamless.usgs.gov/) </font>
+
+      <li>Via FTP (90 meter)<br>
+      <ul>
+         <li><a href="ftp://e0srp01u.ecs.nasa.gov/srtm/version2/Africa" target="_blank">Africa 
+         &amp; Middle-East</a><br> ftp://e0srp01u.ecs.nasa.gov/srtm/version2/Africa <br>
+         <li><a href="ftp://e0srp01u.ecs.nasa.gov/srtm/version2/Australia" target="_blank">Australia</a>
+          <br> ftp://e0srp01u.ecs.nasa.gov/srtm/version2/Australia <br>
+         <li><a href="ftp://e0srp01u.ecs.nasa.gov/srtm/version2/Eurasia" target="_blank">Eurasia</a>
+         <br> ftp://e0srp01u.ecs.nasa.gov/srtm/version2/Eurasia<br>
+         <li> <a href="ftp://e0srp01u.ecs.nasa.gov/srtm/version2/Islands" target="_blank">Islands</a>
+         <br> ftp://e0srp01u.ecs.nasa.gov/srtm/version2/Islands<br>
+          <li><a href="ftp://e0srp01u.ecs.nasa.gov/srtm/version2/North_America" target="_blank">N.America</a>
+         <br> ftp://e0srp01u.ecs.nasa.gov/srtm/version2/North_America<br>
+         <li><a href="ftp://e0srp01u.ecs.nasa.gov/srtm/version2/South_America" target="_blank">S.  America</a>
+         <br> ftp://e0srp01u.ecs.nasa.gov/srtm/version2/South_America
+     </ul>
+     <li>Via FTP (USA - 30 meter)<br>
+      <ul>
+      <li><a href="ftp://e0srp01u.ecs.nasa.gov/srtm/version1/United_States_1arcsec/1arcsec" target="_blank">United States </a>
+      <br> ftp://e0srp01u.ecs.nasa.gov/srtm/version1/United_States_1arcsec/1arcsec
+     </ul>
+     <li>SRTM 30 (mimics GTOPO30)<br>
+      <a href="ftp://e0srp01u.ecs.nasa.gov/srtm/version1/SRTM30" target="_blank">SRTM30</a> - &quot;SRTM30 is a near-global digital elevation model 
+      (DEM) comprising a combination of data from the SRTM. (may be considered an upgrade to GTOPO30)<br>
+      GTOPO30, or as an upgrade to GTOPO30.<br>
+      ftp://e0srp01u.ecs.nasa.gov/srtm/version1/SRTM30 
+
+</ol>
+
+</UL>
+<hr size=2 color=darkred width=800><!---------------------------------------------------------------------------------------->
+ <h3>Interactive Examples of some specific tools (plotting focal mechanisms and vectors): </h3>
+<UL>
+<li><b>PSMECA</b>:
+Adding the following line to the earlier (non-perspective) Gulf plot will add a "beach-ball" earthquake focal mechanism
+for the recent Magnitude 6.  To understand the individual components of input man the psmeca program.  To understand the
+individual components of the focal mechism, read a nearby seismology text :).
+<pre class=screen>
+   # Focal Mech
+      psmeca $MID -C1/0 -W1/0 -Sd1/12   -G0 <<...END >>$OUTFILE
+       -86.568 26.339 4 0.47 -.16 -.31 .95 -.29 .54 25 -89 25 M@-W@-=6.0 Sept. 10, 2006
+...END
+</pre>
+<li><b>PSVELO</b>:
+We can now use the program EULER to calculate the NA and Carribean plates.
+<ol><li> Lets change our area to include more of the Caribbean Sea and plate. (-85/-75<sup>o</sup> and 15/25<sup>o</sup>).
+<li> Include a few new variables in the beginning (including the Caribbean-North American Motion)
+<pre class=screen>
+ <c># my euler program that takes in euler pole and rotation in (lat,lon and <sup>o</sup>/Myr), 
+ # site of interest (lat, lon), and outputs predicted velocities (E, N in mm/yr).</c>
+ EULER=~anewman/bin/GPS/euler
+ <c># NUVEL1 Caribbean-North America Plate Motion (Demets et al., 1994)</c>
+ CBNALAT=74.346   
+ CBNALON=153.892
+ CBNAROT=.1031
+ <c># Site you want to calculate plate motion for</c>
+ SITELAT=16
+ SITELON=-80.5
+</pre>
+<li> Add calculation of Euler motion either in header or just before plotting:
+<pre class=screen>
+ SITEX=`echo $CBNALAT $CBNALON $CBNAROT $SITELAT $SITELON | $EULER | awk '{print $1}'`
+ SITEY=`echo $CBNALAT $CBNALON $CBNAROT $SITELAT $SITELON | $EULER | awk '{print $2}'`
+ <c># calculate magnitude of motion, and report to the nerest 1 decimal point</c>
+ SITEMAG=`echo $CBNALAT $CBNALON $CBNAROT $SITELAT $SITELON | $EULER |\
+  awk '{printf "%6.1f", ($1*$1+$2*$2)**0.5}'`
+  </pre>
+  <li>print up the predicted plate motion for the Caribbean Plate. If this is your last gmt program
+you are running on the figure, change <c>$MID</c> to <c>$END</c>:
+  <pre class=screen>
+    echo $SITELON $SITELAT $SITEX $SITEY " 0 0 0 " $SITEMAG "mm/yr" |\
+             psvelo $MID -Se0.5/.95/12 -A0.1/.8/.3 -G255/0/0 >>$OUTFILE
+</pre>
+
+<li> Play around with the <c>-A</c> and <c>-Se</c> modifiers to change the arrow dimmensions and size.
+<li> Good Luck!
+</ol>
+</UL>
+<hr size=2 color=darkred width=800><!---------------------------------------------------------------------------------------->
+Side note:
+
+If you would like to pull the coastline data used in pscoast for your own program (e.g. gnuplot), you can get the 
+particular coastline information of interest from: <a href=http://rimmer.ngdc.noaa.gov/coast/ target=aux>NOAA</a>.
+<hr size=5 color=darkred width=800><!---------------------------------------------------------------------------------------->
+<table border=0 width=800>
+	<tr><td valign=center align=left>
+			<a href=index.html><IMG src=GMTBack.png><b>Introduction: </b></a>
+</td><td ></td></tr></table>
+   <center>
+   <hr width=800><!-- ________________________________________________________ -->
+   <font size=2><a href=https://avnewman.github.io>Home</a> |  
+   <font size=2 color=darkblue> <I>anewman<IMG src=../pics/at.gif>gatech.edu</I></font> |
+   <font size=2 color=darkblue><I> Updated: 
+Tue Nov 14 10:04:11 EST 2006
+   </I></font>
+   </center>
+</td> </tr> </table>
+</center>
+<script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); </script>
+<script type="text/javascript"> var pageTracker = _gat._getTracker("UA-6112466-2"); pageTracker._trackPageview(); </script>
+
+</body>
+</html>

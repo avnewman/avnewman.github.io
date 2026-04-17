@@ -1,0 +1,40 @@
+
+          <tr> <td>
+            <hr><!-------------------------------------------->
+             <B>09/14/16:</B><ul>
+		     <li>LAGEOS Missions<br> More info at <a href=http://eospso.nasa.gov/missions/laser-geodynamics-satellites12>NASA</a><br>
+		     <a href=misc/pics/LAGEOS_b.jpg><img src=misc/pics/LAGEOS_b_sm.jpg></a><br>
+		<li><a href=misc/pics/LRO_slr.jpg><img src=misc/pics/LRO_slr_sm.jpg></a><br>
+		More information on NASA's use of Satellite Laser Ranging (SLR) to track the Lunar Reconnaissance ORbiter (LRO) can be found <a href=http://www.nasa.gov/mission_pages/LRO/news/LRO_lr.html target=aux>here</a>.
+		<br><br>
+        <li><a href=http://lupus.gsfc.nasa.gov/brochure/bintro.html target=aux>VLBI</a> at NASA
+        <br><br>
+        <li> GPS-derived Plate motions (REVEL)<br> <a href=misc/pics/REVEL-2000_m.jpg><img src=misc/pics/REVEL-2000_m_sm.jpg></a><br>
+        Similar to the geologically-derived (NUVEL1a), but with data collected over motions from just 10-15 years, rather than over
+        1 Ma.  Interestingly, away from active plate boundaries, results are consistent at about 97%.
+        <br><br>
+        <li> Complex motions of Microplates show details of Euler and continental motions<br> <a href=misc/pics/e_med_2000_00.gif><img src=misc/pics/e_med_2000_00_sm.gif></a><br>
+        <br><br>
+	<li><a href=http://sps.unavco.org/crustal_motion/dxdt/ target=aux> Current Global GPS velocities</a> 
+	<br>
+	<li> North American Plate Motion<br>
+	<A HREF=misc/pics/Calais_etal_JGR_2006_fig6.png>(from Calais <i>et al.</i>, 2006)</A><br>
+	<li> After removing Euler motion, left with residual motion (mostly isostatic rebound)<br>
+	<A HREF=misc/pics/Sella_Fig1_2007.png>(from Sella_<i>et al.</i>,_2007)</A><br>
+        <br>
+	 GPS and InSAR processing<br>
+	<li><a href=http://geophysics.eas.gatech.edu/people/anewman/classes/MGM/GAMIT/>My pages</a> describing GPS data reduction using Gamit.
+	<li><a href=http://geophysics.eas.gatech.edu/people/anewman/classes/MGM/InSAR/>My pages</a> describing InSAR processing using ROI_PAC.
+	 <br><br>
+	 <li>InSAR image or deformation due to the Hector Mine Earthquake in October of 1999.<br>
+	 <A HREF=misc/pics/geo_filt_990915-991020-sim_ODR_4rlks.int.png><IMG SRC=misc/pics/hectormine.png ></A><br>
+	<li><a href=http://winsar.unavco.org target=aux>Western US InSAR Consortium</a> page
+	 <br><br>
+	 <li>LIDAR Imaging during recent activity at Mount St. Helens in Sept and November 2004<br>
+	          <a href=misc/pics/LIDAR_crater_dome_sept03_and_nov04_animated.gif>
+		 <img src=misc/pics/LIDAR_crater_dome_sept03_and_nov04_animated_sm-0.png>
+		 <img src=misc/pics/LIDAR_crater_dome_sept03_and_nov04_animated_sm-1.png>
+	 </a><br> <a href=http://vulcan.wr.usgs.gov/Volcanoes/MSH/Eruption04/Monitoring/>from USGS</a>
+         </UL>
+   </td> </tr-->
+

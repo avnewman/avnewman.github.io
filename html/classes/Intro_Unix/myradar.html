@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>SHELL- MYRADAR</title>
+  <base href="http://geophysics.eas.gatech.edu/people/anewman/">
+    <link rel="stylesheet" href="css/simple.css" type="text/css">
+</head>
+<body>
+<body bgcolor=lightyellow text=black link=darkblue vlink=black alink=lime>
+ <center>
+<table border=0 width=800 cellspacing=5 cellpadding=00>
+<tr><td align=top>
+
+<h1 class="left">myradar: a companion to <a href="classes/Intro_Unix/myforecast.html">myforecast</a></h1>
+by <a href="/anewman">Andrew Newman</a> 
+<p>
+One of a series of example shells:
+<p>
+This contribution is an extremely simple bash shell that I wrote for calling up the local
+doppler radar map from <a href="http://www.wunderground.com">Wunderground.com</a>.
+</p>
+<br>
+<b>myradar:</b>
+<PRE><code class="screen"><c>#!/bin/bash 
+# program myradar
+# version 1.0  
+# written by Andrew V. Newman
+# last modified Tue Tue Mar  2 17:21:01 MST 2004
+
+# shell script to bring up a current local radar
+
+# Sets a default URL BASE 
+# NOTE: If you want to change this for your local area, go to 
+# <a href=http://www.wunderground.com>wunderground.com</a> and find the correct URL for your area.  
+# I modified mine quite a bit so as to only show the gif image
+# with the full delay and number of images available.  The only important value
+# that needs to be changed to get your area but have it look like mine is the
+# "ABX" in my URL path.  For example, switch 'ABX' to 'LOT' to get Chicago. </c>
+URL="http://radblast.wunderground.com/cgi-bin/radar/WUNIDS?station=FFC&num=6&delay=15&noclutter=0"
+
+<c># Set the default graphical browser
+# I like galeon, but it may not be installed on your machine. </c>
+  GUI_BROWSER=/usr/bin/firefox
+<c># ---------------------------- #
+# If you can display a window on your terminal it will
+# bring up your forecast in a graphical browser</c>
+  if [ $DISPLAY ]; then
+     $GUI_BROWSER $URL 2> /dev/null
+<c># Otherwise, it cannot work for you</c>
+  else
+        echo "Sorry cannot bring up a display :("
+        exit 1
+  fi
+<c># exit cleanly</c>
+  exit 0
+</c></screen></PRE>
+<p>A copy of this script exists in <code><c> /home/anewman/bin/myradar</c></code> on <code><c>terremoto</c></code>
+Once you have finished creating this file all you need to do is:
+<UL>
+  <li>Change permissions of the file so that you can execute it:<br>
+    <code class="screen">% chmod 755 myradar</code>
+    <li>Move file to a directory in your path:<br>  I would suggest creating a bin directory from your home for all
+    shells and then making certain it is included in your path.
+    <code class="screen">% mkdir ~/bin<br>% mv myradar ~/bin/ </code>
+    If it is not already there, add the following line to ~/.cshrc if you are using a csh or tcsh shell
+    <code class="screen"> path = ( $path ~/bin) </code>
+    Or, if you are using bash add the following line to ~/.bashrc
+    <code class="screen"> PATH=$PATH:~/bin </code>
+</UL>
+<p>
+If you followed the instructions in the commented area, you should be able to switch 
+the radar image to your area. Now that you have set your defaults, give the program a shot.  Try running the following command:
+<code class="screen">
+	% myradar<br>
+</code>
+</p>
+   <center>
+   <hr width=800><!-- ________________________________________________________ -->
+   <font size=2><a href=http://geophysics.eas.gatech.edu/people/anewman/classes/Intro_Unix/>Course Home</a> |<font size=2 color=darkblue> <I>anewman<IMG src=http://geophysics.eas.gatech.edu/people/anewman/pics/at.gif>gatech.edu</I></font> | <font size=2 color=darkblue><I>Updated:
+Mon Sep 18 18:03:31 EDT 2006
+   </I></font>
+   </center>
+</td> </tr> </table>
+</center>
+
+<script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); </script>
+<script type="text/javascript"> var pageTracker = _gat._getTracker("UA-6112466-2"); pageTracker._trackPageview(); </script>
+
+</body>
+</html>

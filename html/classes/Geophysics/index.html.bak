@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<HTML lang="en">
+<head>
+  <TITLE>EAS3610: Introduction to Geophysics, GA TECH</TITLE>
+  <base href="http://geophysics.eas.gatech.edu/classes/Geophysics/">
+  <link REL="SHORTCUT ICON" href=Worldseismicity_round_tiny.png>
+    <link rel="stylesheet" href="css/simple.css" type="text/css">
+<style tpye="text/css">
+   table {
+	border: none;
+	border-style: none;
+	border-collapse: collapse;
+	background: lightyellow;   /* background: #ffffdd; */
+  }
+  td,th {
+	border: none;
+	border-style: none;
+	padding: 0pt;
+	font-size: 9pt;
+	font-family: arial, helvetica, sans-serif;
+}</style>
+
+
+</head>
+<body bgcolor=lightyellow text=black link=darkblue vlink=black alink=lime>
+  <center>
+<table border=0 width=800 cellspacing=5 cellpadding=00>
+<tr><td align=center width=800 align=top>
+<font size=3>
+  <table border=0 width=750 cellspacing=5 cellpadding=00>
+	  <tr height=310><td align=left width=440 align=top>
+      <h2>EAS 3610: Introduction to Geophysics</h2>
+      <h3>Fall, 2012</h3>
+   <table><tr>
+   </tr><tr>
+   <td width=300 valign=top>
+	<b>Instructor:</b> <br>
+	<b><a href=http://geophysics.eas.gatech.edu/anewman>Andrew Newman</a></b><br>
+	<I>anewman<IMG src=http://geophysics.eas.gatech.edu/anewman/pics/at_10.png>gatech.edu</I><br>
+	PH:404-894-3976<br>
+        ES&amp;T 2254<br>
+</td>
+   <td width=300 valign=top>
+	<b>Teaching Assitant:</b> <br>
+	<b><a href=http://www.eas.gatech.edu/people/Zach_Lifton/>Zach Lifton</a> (<a href=http://shadow.eas.gatech.edu/~kfrankel/Zach_in_hole.jpg>img</a>)</b><br>
+	<I>zach.lifton<IMG src=http://geophysics.eas.gatech.edu/anewman/pics/at_10.png>eas.gatech.edu</I><br>
+        ES&amp;T 2108<br>
+   </td>
+   </tr></table>
+       <br>
+      <a href=syllabus_Geophysics_Fall2012.pdf>Syllabus</a> (PDF) <br>
+
+      <A href=misc>Select information from lectures</a><br>
+   </td>
+   <td width=310>
+   <IMG SRC=GEOPH_EAS_logo4b_square.png>
+   </td>
+   </tr>
+   </table>
+  <table border=0 width=750 cellspacing=5 cellpadding=00>
+   <tr><td align=left>
+<hr width=750><!-------------------------------------------->
+<h2>GENERAL</h2>	   
+
+<b>When:</b> August 21 - December 6, 2012<br>
+   Lecture:</b> Tues/Thurs, 9:35 - 10:55 am <br> 
+<br>
+<b>Where:</b> ES&amp;T <u>L</u>1116
+<br>
+<br>
+<b>Instructor Office Hours:</b> Will be held in my office (see above) on Tuesdays from 11 am - 12 pm, and 
+ Wednesdays from 1:30 - 3 pm, or by appointment.<br>
+<b>Teaching Assitant Office Hours:</b> ES&amp;T 2120, Tuesday 1 - 2 pm and Thursdays 11 am - 12 pm, or by appointment.<br>
+<br>
+<b>Course Objectives:</b><br>
+This course is an introduction to methods used to visualize and understand the history, shape, mechanical structure,
+and dynamics of the solid-earth system.  We will discuss how geophysical tools, including seismology,
+gravity, magnetism, heat flow, geochronology, and geodesy, are used to understand the age, whole-earth
+and near-surface structure, and to quantify the kinematics and dynamics of plate tectonics.
+<br>
+<br>
+<b>Prerequisites</b><br>
+<ul><li> Physics 2212: Introduction to Physics I
+    <li> EAS 2600: Earth Processes and Products
+</ul>
+<br>
+<b>Required Text:</b>
+<ul><li>Fowler, C.M.R., <i>The Solid Earth: An Introduction to Global Geophyics, 2nd Edition</i>, Cambridge University Press, 685 pp., 2005.<br>
+</ul>
+<br>
+<b>Class Communications:</b><br>
+You will occasionally receive class information 
+via email to your prism account. Because this information may not be communicated 
+in class, you should be sure to read messages identified as [EAS: Geophysics].  
+In emailing me for class, please add <r>[EAS: Geophysics]</r> to the subject line and 
+identify yourself by name in the message since not all prism accounts clearly
+identify the email's author.
+<br>
+<br>
+<hr width=750><!-- ________________________________________________________ -->
+
+<b>Course Outline:</b>
+<br>
+This is an approximate outline of topics and timing and is subject to change throughout the semester.<br>
+<table border=0 background="#ffffff" align=center cellpadding=0 cellspacing=0>
+<tr border=0 cellpadding=0 cellspacing=0>
+	<th width=60><b> Week</b> </th><th width=100> <b>Date</b> </th><th width=340> <b>Topic</b> </th><th width=80><b> HW/Exams</b> </th></tr>
+<tr><td>1    </td><td>8/21 - 23	      </td><td> Introduction:                                 	        	</td><td>	</td></tr>
+<tr><td>     </td><td>		      </td><td>       - Why Geophysics?                        	        	</td><td>	</td></tr>
+<tr><td>     </td><td>		      </td><td>       - Math review 				        	</td><td>	</td></tr>
+<tr><td>     </td><td>		      </td><td>       - Geophysical approximation	   	        	</td><td>	</td></tr>
+<tr><td>2-3  </td><td>8/28 - 9/6      </td><td> Plate Tectonics and Geodynamics 		        	</td><td><!--A href=HWs/HW1.pdf> Homework 1 </a-->	</td></tr>
+<tr><td>     </td><td>		      </td><td>	- The geometry and kinematics of plate motions	                </td><td>       </td></tr>
+<tr><td>     </td><td>                </td><td>	- Survey and characterization of plate motions            	</td><td>	</td></tr>
+<tr><td>     </td><td>                </td><td>	- Types and importance of plate boundaries                     	</td><td>       </td></tr>
+<tr><td>     </td><td>		      </td><td>	- Plate reconstructions and dating		        	</td><td>	</td></tr>
+<tr><td>     </td><td>		      </td><td>	- Paleomagnetism and polar wander 		        	</td><td>	</td></tr>
+<tr><td>     </td><td>		      </td><td>	- Modern measurements of plate motions		        	</td><td>       </td></tr>
+<tr><td>     </td><td>                </td><td>	- Mechanisms and consequences of plate tectonics        	</td><td>	</td></tr>
+<tr><td>4-5  </td><td>9/11- 9/20      </td><td> Seismology: Earth imaging and earthquake characterization	</td><td>	</td></tr>
+<tr><td>     </td><td>		      </td><td>	- Seismic waves 					        </td><td>	</td></tr>
+<tr><td>     </td><td>		      </td><td>	- Earthquake seismology                       		        </td><td><!--a href=beachballs.pdf>beachballs handout</a-->		</td></tr>
+<tr><td>     </td><td>		      </td><td>	- Seismic imaging: reflection, refraction, and tomography        </td><td>	</td></tr>
+<tr><td>     </td><td>    	      </td><td>	- The seismometer                       	        	</td><td>	</td></tr>
+<tr><td>6-7  </td><td>9/25 - 10/4     </td><td> Earth Gravity                 			        	</td><td><!--A href=HWs/HW2.pdf> Homework 2 </a-->	</td></tr>
+<tr><td>     </td><td>		      </td><td>	- Mass distribution and relation to gravity                     </td><td>	</td></tr>
+<tr><td>     </td><td>		      </td><td>	- Geopotential and the shape of the earth	        	</td><td>       </td></tr>
+<tr><td>     </td><td>		      </td><td>	- Gravity anomalies     			        	</td><td>	</td></tr>
+<tr><td>     </td><td>                </td><td>	- The gravimeter        			        	</td><td>	</td></tr>
+<tr><td>     </td><td>		      </td><td>	- Isostasy					        	</td><td><!--A href=HWs/HW3.pdf> Homework 3 </a-->  	</td></tr>
+<tr><td>8    </td><td>10/9    	      </td><td>	                                        	        	</td><td>Mid-term 1 </td></tr>
+<tr><td>8-9  </td><td>10/11 - 10/18   </td><td>  Geochronology: 				        	</td><td>	</td></tr>
+<tr><td>     </td><td>		      </td><td>	- Geologic time: from relative to absolute 	        	</td><td>	</td></tr>
+<tr><td>     </td><td>		      </td><td>	- Prinicples of geochronology			        	</td><td>	</td></tr>
+<tr><td>     </td><td>                </td><td>	- Modern methods       		       		        	</td><td>       </td></tr>
+<tr><td>     </td><td>                </td><td>	- Estimations of the Earth's Age		        	</td><td>       </td></tr>
+<tr><td>     </td><td>(no class 10/16)</td><td> <i> Fall break</i>         			        	</td><td>	</td></tr>
+<tr><td>10-12</td><td>10/23 - 11/6    </td><td>  Internal Heat Engine:				        	</td><td>	</td></tr>
+<tr><td>     </td><td>		      </td><td>	- Sources of Earth's heat			        	</td><td>	</td></tr>
+<tr><td>     </td><td>		      </td><td>	- Mechanisms of heat transport			        	</td><td> 	</td></tr>
+<tr><td>     </td><td>		      </td><td>	- Global heat flow and heat loss                             	</td><td>	</td></tr>
+<tr><td>     </td><td>	 	      </td><td>	- Tapping Earth heat: geothermal energy                      	</td><td>	</td></tr>
+<tr><td>12-13</td><td>11/8 - 11/13    </td><td>  Deep Earth structure: 				        	</td><td> <!--A href=HWs/HW4.pdf> Homework 4 </a-->  	 	</td></tr>
+<tr><td>     </td><td>       	      </td><td>	- Internal structure from seismology		        	</td><td>       </td></tr>
+<tr><td>     </td><td>       	      </td><td>	- Planetary  inertia and moment 		        	</td><td>       </td></tr>
+<tr><td>     </td><td>       	      </td><td>	- Mantle convection 				        	</td><td>       </td></tr>
+<tr><td>     </td><td>       	      </td><td>	- The Geodynamo 				        	</td><td>       </td></tr>
+<tr><td>13   </td><td>11/15           </td><td>  Lithoshperic structure: 			        	</td><td>       </td></tr>
+<tr><td>     </td><td>       	      </td><td>	- Oceanic lithospheric formation		        	</td><td>       </td></tr>
+<tr><td>     </td><td>       	      </td><td>	- Oceanic lithospheric destruction		        	</td><td>       </td></tr>
+<tr><td>     </td><td>       	      </td><td>	- Growth of continents                  	        	</td><td>       </td></tr>
+<tr><td>     </td><td>       	      </td><td>	- Formation of contiental basins		        	</td><td>       </td></tr>
+<tr><td>14   </td><td>11/20           </td><td>	                       		       		        	</td><td>Mid-term 2</td></tr>
+<tr><td>     </td><td>(no class 11/22)</td><td> <i> Thanksgiving</i>				        	</td><td>       </td></tr>
+<tr><td>15   </td><td>11/27 - 11/29   </td><td> Course Wrap-up: Emergent geophysics 		         	</td><td>       </td></tr>
+<tr><td>     </td><td>       	      </td><td>	<b>Graduate Student lectures on Geophysical Research</b>        </td><td>       </td></tr>
+<tr><td>16     </td><td>(no class)</td><td> <i>American Geophysical Union Meeting</i>				        	</td><td>       </td></tr>
+<tr><td>17   </td><td>12/13: 8 - 11 am</td><td>	                                                                </td><td>Final  </td></tr>
+</table>
+<br><br>
+<hr width=750><!-- ________________________________________________________ -->
+<h2>EVALUATION:</h2>
+<b>Undergraduate section:</b> Your grade is based on homework (30%) and 3 exams (70%).
+<br>
+<b>Graduate section:</b> Your grade is be based on homework (30%), 3 exams (60%), and an oral presentation (10%).
+<br>
+<i>The Undergraduate and Graduate sections will be graded and curved independently.</i>
+<br>
+<br>
+<h3>Homework:</h3>
+Homework will be assigned about every 2 weeks and will be due one week
+from assignment. Graduate students will be assigned additional problems in each of the assigned problem sets.  
+Late homework will not accepted without prior authorisation.
+See the academic honesty section (below), for information on working together.
+<br>
+<br>
+<h3>Exams:</h3>
+There will be three exams in total, 2 mid-terms administered during class time, 
+and 1 final exam administered during finals week.  The exams are equally weighted, with the lowest
+score being dropped.  Thus, if you are satisfied with your course performance after the second mid-term
+exam, there will be no need for your to take the final.
+Keep in mind that while the first two exams will focus on material covered since the previous exam, the final exam
+will be comprehensive, and about 50% longer.
+Missed exams will receive a score of zero, and will be considered your dropped exam. 
+<br>
+<br>
+<hr width=750><!-- ________________________________________________________ -->
+<h2>ACADEMIC HONESTY:</h2>
+
+<b>General:</b> It is expected that all students are aware of their individual
+responsibilities under the 
+<a href=http://www.honor.gatech.edu/>Georgia Tech Academic Honor Code</a>, 
+which will be strictly adhered to in this class.
+<br>
+<br>
+<b>Problem Sets:</b> Students are encouraged to work together on developing
+solutions to problem sets; however, the solutions/answers that are turned
+in must be the work of each individual.  Include the name of individuals consulted
+for each problem that you sought aid in answering (including the instructors).
+<br>
+<br>
+<b>Exams:</b> All information required for exams will be supplied. Reference
+to texts or other documents during exams is strictly forbidden. The use of
+electronic devices (e.g. cellular phones, computers etc.) other than
+non-programmable calculators during exams and quizzes is not allowed.
+<br>
+<br>
+The complete text of the Academic Honor Code may be found at <a href=http://www.honor.gatech.edu/>http://www.honor.gatech.edu/</a>.
+<br>
+<br>
+  </table></font>
+   <hr width=750><!-- ________________________________________________________ -->
+   <font size=2><a href=http://geophysics.eas.gatech.edu/>Geophysics Home</a> |<font size=2> <i>anewman <IMG src=http://geophysics.eas.gatech.edu/anewman/pics/at_10.png>gatech.edu</i></font> | <font size=-1><I>Updated: 
+			   Thu Aug  9 13:19:11 EDT 2012
+		   </I>
+</font>
+</td></tr>
+</table>
+ </center>
+<script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); </script>
+<script type="text/javascript"> var pageTracker = _gat._getTracker("UA-6112466-2"); pageTracker._trackPageview(); </script>
+</body>
+</HTML>

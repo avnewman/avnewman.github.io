@@ -1,0 +1,56 @@
+<html>
+<head>
+  <title>Introduction to Unix Mini-Course Modules</title>
+  <base href="http://shadow.eas.gatech.edu/~anewman/">
+  <link rel="stylesheet" href="css/simple.css" type="text/css">
+</head>
+<body bgcolor=lightyellow text=black link=darkblue vlink=black alink=lime>
+ <center>
+  <table border=0 width=800 cellspacing=5 cellpadding=00>
+  <tr><td align=top>
+ <h1 class="left">Introduction to Unix Mini-Course Modules</h1>
+ by <a href="http://shadow.eas.gatech.edu/~anewman">Andrew Newman</a> (2006-03-18)<font size=-1 color=red> </font>
+
+ <p> <b>An editor primer: VI(M)</b><br>     
+  
+     VIM is a very powerful unix-based text editor that has been specifically developed to help in 
+     writing/manipulating/viewing computer code languages and data files.  
+     While there are other editors out there, this is still the standard by which most text editing is done in unix.
+
+     To make the course more productive please spend about an hour with the <a href="http://www.apmaths.uwo.ca/~xli/vim/vim_tutorial.html"> 
+     following online tutorial</a> if you are not already comfortable within VI(M).
+<br>
+<br>
+     Here is a  <a href=http://www.viemu.com/vi-vim-cheat-sheet.gif>quick-reference chart</a> of VIM functionality.
+<br>
+<br>
+    Very breifly, there are two main modes within VI(M):
+    <LI><B>Command mode:</B> This is the default mode of vi. From this mode, you can run a series of functions
+    <LI><B>Insert mode:</B>
+
+
+
+ <p> <b>An editor primer:</b><br>     
+Shell Scripting is a way of putting together numerous 'command line' programs into a simple script (recipe) for automating your processing. By using UNIX shell scripts, you can become much more efficient and productive in your computer/research work.
+ <pre class="screen">
+% ssh -X $USER@tsunami.eas.gatech.edu </pre>
+ <p>
+ Now please change your group to MGM by running. Note that upon switching groups a message will
+ be displayed telling you which directory to work in.
+ <pre class=screen>
+% newgrp MGM   
+% mkdir MGM    <c># need to create MGM if it doesn't already exist  </c>
+% cd MGM       <c># same as 'cd /home/$USER/MGM' here </c> </pre >
+
+<tr> <td>
+   <center>
+   <hr width=800><!-- ________________________________________________________ -->
+   <font size=2><a href=http://shadow.eas.gatech.edu/~anewman/classes/MGM>Course Home</a> |<font size=2 color=darkblue> <I>anewman<IMG src=http://shadow.eas.gatech.edu/~anewman/pics/at.gif>gatech.edu</I></font> | <font size=2 color=darkblue><I>Updated: 
+    Mon Sep 18 06:30:37 EDT 2006
+   </I></font>
+   </center>
+</td> </tr> </table>
+</center>
+
+</body>
+</html>

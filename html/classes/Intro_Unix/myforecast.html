@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>SHELL- DEFINE</title>
+  <base href="http://geophysics.eas.gatech.edu/people/anewman/">
+    <link rel="stylesheet" href="css/simple.css" type="text/css">
+</head>
+<body>
+<body bgcolor=lightyellow text=black link=darkblue vlink=black alink=lime>
+ <center>
+<table border=0 width=800 cellspacing=5 cellpadding=00>
+<tr><td align=top>
+
+<h1 class="left">myforecast: a companion to <a href=classes/Intro_Unix/myradar.html>myradar</a></h1>
+by <a href="">Andrew Newman</a> 
+<p>
+One of a series of example shells:
+</p>
+<p>
+This contribution is a simple bash shell to call up the  weather forecast 
+from  <a href="http://www.wunderground.com">Wunderground.com</a>.
+What is nice about this shell and the wunderground site, is that you can call up the forecast for just about
+anywhere (at least from what I can tell).
+</p>
+<br>
+<b>myforecast:</b>
+<PRE><code class="screen"><c>#!/bin/bash 
+# program myforecast
+# version 1.0  
+# written by Andrew V. Newman
+# last modified Tue Feb 24 17:21:57 MST 2004
+
+# shell script to bring up a weather forecast either on a
+# graphical browser or in the console if the screen is not available.
+
+# Create a default location.  This assumes you live in the US as I do.</c>
+  CITY=Los_Alamos  <c># use underscore to separate multi-word cities</c>
+  STATE=NM 
+<c># Sets a default URL BASE  </c>
+  URL_SUF=US/$STATE/$CITY.html 
+<c># Set the default graphical browser 
+# I like galeon, but it may not be installed on your machine.</c>
+  GUI_BROWSER=/usr/bin/galeon
+  GUI_BROWSER=/usr/bin/konqueror
+  GUI_BROWSER=/usr/bin/mozilla
+
+<c># ---------------------------- #</c>
+<c># Shouldn't have to change these</c>
+  LYNX=/usr/bin/lynx
+  URL_BASE=http://www.wunderground.com/
+  MBL_URL_BASE=http://mobile.wunderground.com/
+<c># If you use just one variable</c>
+  if [ $1 ] ; then
+     URL_SUF=cgi-bin/findweather/getForecast?query=$1
+  fi
+<c># If you use two variables</c>
+  if [ $2 ]; then
+     CITY=$1 
+     STATE=$2
+
+     URL_SUF=US/$STATE/$CITY.html
+  fi
+<c># If you can display a window on your terminal it will
+# bring up your forecast in a graphical browser</c>
+  if [ $DISPLAY ]; then
+     URL=${URL_BASE}${URL_SUF}
+     $GUI_BROWSER $URL 2> /dev/null
+<c># Otherwise, it will bring it up on screen using a version
+# of the website set up for mobile computers (no ads and few graphics,
+# which will not be displayed anyway).</c>
+  else
+     URL=${MBL_URL_BASE}${URL_SUF}
+     $LYNX $URL -dump 2> /dev/null >forecast.temp
+     <c># displays forecast as text</c>
+       more forecast.temp
+     <c># remove temporary file</c>
+       rm forecast.temp
+  fi
+<c># exit cleanly</c>
+  exit 0
+</font></screen></PRE>
+<p>A copy of this script exists in <code><c> /home/anewman/bin/myforecast</c></code> on <code><c>terremoto</c></code>
+<br>
+<br>
+Once you have a copy on your system, all you need to do is:
+<UL><li>Modify the first two variables to create your own defaults.
+  <li>Change permissions of the file so that you can execute it:<br>
+    <code class="screen">% chmod 755 myforecast</code>
+    <li>Move file to a directory in your path:<br>  I would suggest creating a bin directory from your home for all
+    shells and then making certain it is included in your path.
+    <code class="screen">% mkdir ~/bin<br>% mv myforecast ~/bin/ </code>
+    If it is not already there, add the following line to ~/.cshrc if you are using a csh or tcsh shell
+    <code class="screen"> path = ( $path ~/bin) </code>
+    Or, if you are using bash add the following line to ~/.bashrc
+    <code class="screen"> PATH=$PATH:~/bin </code>
+</UL>
+<p>
+If you look through the program, you will notice that there is a default set up for my old home town.  Certainly you
+should change to whatever you want.  It is important to note here, that though wunderground.com gives forecasts for
+cities around the globe, the script is really set to work within the US.<br>
+<br>
+Now that you have set your defaults, give the program a shot.  Try running the following commands:
+<code class="screen">
+	% myforecast<br>
+ 	% myforecast Chicago IL <br>
+	% myforecast Tokyo<br>
+	% myforecast 30332<br>
+</code>
+</p>
+   <center>
+   <hr width=800><!-- ________________________________________________________ -->
+   <font size=2><a href=http://geophysics.eas.gatech.edu/people/anewman/classes/Intro_Unix/>Course Home</a> |<font size=2 color=darkblue> <I>anewman<IMG src=http://geophysics.eas.gatech.edu/people/anewman/pics/at.gif>gatech.edu</I></font> | <font size=2 color=darkblue><I>Updated:
+Mon Sep 18 18:16:49 EDT 2006
+   </I></font>
+   </center>
+</td> </tr> </table>
+</center>
+
+<script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); </script>
+<script type="text/javascript"> var pageTracker = _gat._getTracker("UA-6112466-2"); pageTracker._trackPageview(); </script>
+</body>
+</html>

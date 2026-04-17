@@ -1,0 +1,176 @@
+<html>
+<head>
+  <title>Introduction to Unix Mini-Course Modules</title>
+  <base href="/html/classes/">
+  <link rel="stylesheet" href="css/simple.css" type="text/css">
+</head>
+<body bgcolor=lightyellow text=black link=darkblue vlink=black alink=lime>
+<SCRIPT language=JavaScript1.2>
+<!-- Begin
+function  PATH_POPUP(){
+  PageURL="Intro_Unix/path.html";
+  WindowName="Path";
+  settings="toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=800,height=500";
+  window.open(PageURL,WindowName,settings); 
+} // End function-->
+function  XWIN_POPUP(){
+  PageURL="Intro_Unix/xwin.html";
+  WindowName="X-Win32";
+  settings="toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=800,height=500";
+  window.open(PageURL,WindowName,settings);
+} // End function
+function  MAC_POPUP(){
+  PageURL="Intro_Unix/mac.html";
+  WindowName="X-Win32";
+  settings="toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=800,height=500";
+  window.open(PageURL,WindowName,settings);
+} // End function
+// END functions-->
+</SCRIPT>
+
+
+
+ <center>
+  <table border=0 width=800 cellspacing=5 cellpadding=00>
+  <tr><td align=top>
+ <h1 class="left">Introduction to Unix: mini-course modules</h1>
+ by <a href="https://avnewman.github.io/">Andrew Newman</a> 
+
+
+<h3>Getting Started: </h3>
+
+This course is broken up into several sections:<ol start="0">
+<li>Get Access to a UNIX/Linux machine.  See Zhigang or me for an account on the geophysics system.
+<li>Log in.<ul> 
+	<li>From Windows: Follow <a href="javascript:XWIN_POPUP()">these instructions</a>.
+	<li>From Macs:  Follow  <a href="javascript:MAC_POPUP()">these instructions</a>.
+	<li>From UNIX/Linux:  You're already on a suitable machine.. for getting on the Geophysics system, follow the Mac instructions above.
+</ul>
+<li>Basic Introduction to Unix <a href=Intro_Unix/unix_lec1_v2.pdf> pdf presentation</a>
+	<li>An Editor Primer <c>(this page)</c>
+<li>Introduction to Shell Scripting <c>(this page)</c>
+<li><a href="Intro_GMT">Introduction to GMT shell scripts</a> for figure generation
+</ol>
+
+<hr size=2 color=darkred width=800><!---------------------------------------------------------------------------------------->
+ <h3>An editor primer: <c> VI(M)</c></h3>
+<ul>
+     <c>vim </c>is a very powerful Unix-based text editor that has been specifically developed to help in 
+     writing/manipulating/viewing computer code languages and data files.  
+     While there are other editors out there, this is still the standard by which most text editing is done in Unix.
+<p>
+     While <c>vi</c> is the default editor on older Unix machines, <c>vim</c>
+     is the modern version of the editor on Linux machines.  <c>vim</c> acts 
+     in much the same way as <c>vi</c> but has much more extensive functionality.
+ <p>
+     To make the course more productive please spend about an hour with the <a href="http://blog.interlinked.org/tutorials/vim_tutorial.html"> 
+     following online tutorial</a> if you are not already comfortable within <c>vi(m)</c>.
+<br>
+<br>
+     Here is a  <a href=http://www.viemu.com/vi-vim-cheat-sheet.gif>quick-reference chart</a> of VIM functionality.
+<br>
+<br>
+    Very briefly, there are two main modes within VI(M):
+    <LI><B>Command mode:</B> This is the default mode of vi. From this mode, you can run a series of commands. Basics:
+       <UL>
+	 <li><c>/</c>[<c>?</c>] -- forward [reverse] search
+	 <li><c>:q</c>[<c>!</c>] -- quit [forced]
+	 <li><c>:w</c> -- write
+	 <li><c>h</c>, <c>j</c>, <c>k</c>, <c>l</c> -- move left, down, up, right (arrows also work)
+         <li><c>u</> -- undo
+         <li><c>CNTRL^r</c> -- redo
+      </UL>
+    <LI><B>Insert mode:</B> This is where you can simply type in text.  
+      <UL>
+	 <li>Arrows will work to move around, but not <c>h,j,k,l</c>
+	 <li>Use the <c>_ESC_</c> key to return to command mode.
+      </UL>
+      <UL>Different ways to get into insert mode
+	 <li><c>i</c> -- normal insert
+	 <li><c>I</c> -- insert at beginning of line (BOL)
+	 <li><c>a</c> -- append (start at next character) 
+	 <li><c>o</c> -- open a new line below
+	 <li><c>O</c> -- open a new line above
+	 <li><c>r</c> -- replace one character and return to command mode
+	 <li><c>R</c> -- replace characters until <c>_ESC_</c>
+	 <li><c>c</c> -- change word
+	 <li><c>C</c> -- change rest of line
+	 <li><c>v</c> -- visual replace
+	 <li><c>V</c> -- visually replace select columns
+      </UL>
+
+</ul>
+<hr size=5 color=darkred width=800><!---------------------------------------------------------------------------------------->
+ <h3>Introduction to Shell Scripts:</h3>
+<ul>
+ <p>Shell scripts are simply a combination of command-line programs that are run sequentially. Shell are tremendously useful tools
+ for performing repetitive or automated tasks on a system.  They are also, wonderful for documenting even a one-time processes
+ for future reference.  You will find that shell scripting goes hand-in-hand with working on UNIX.<br><br>
+ 
+ <p>Please look through this <a href=http://pegasus.rutgers.edu/~elflord/unix/bash-tute.html> online tutorial</a> to help get you started.
+<br><br>
+ <p><b>My first shell script:</b><br>
+   <pre class=screen>
+	<c>#!/bin/bash    
+        # hello_world
+        # version 1.0
+        # Andrew Newman
+	# created Mon Sep 18 18:33:30 EDT 2006 </c>
+        echo "hello world"
+	exit 0 </pre>
+     
+ <li> The first line is a special 'comment' that tells the computer what type of shell the script should run in.  Options include
+ bash, csh, tcsh, sh.  
+ <li> The next 4 comment lines (lines that start with <c>#</c>), do nothing, but are useful to the reader of the script.
+ <li> the <c>echo</c> command prints the next text to screen.
+ <li> the <c>exit</c> command, when followed by <c>0</c>, cleanly exits the program without an error. (not necessary, but good practice).<br>
+<br>
+<b>Running the program:</b>
+ <li> <red>Important:</red> After creating the script file, it is imperative that you make it executable using the <c>chmod</c> program. 
+     <pre class=screen>% chmod ugo+x hello_world  <c> #this will give execute permission to you, your group and others.</c> </pre>
+ <li> Now, all you need to do to run the program is type '<c>hello_world</c>' (this assumes that your <a href="javascript:PATH_POPUP()">path</a>  is set to allow this).
+	  
+
+     <pre class=screen>%  hello_world 
+hello world</pre>
+Not very exciting, but works!
+ <br><br>
+ <li> Using variables (defined with a '<c>=</c>'), we can make the program more useful.  
+ <li> Once a variable is created, it can be called by preceding it with an <c>$</c>.
+ <li> We can modify the script to declare who said hello, by calling a default shell variable <c>$USER</c>.  
+ <li> We can also call set a new variable <c>$TIME</c> as the output of the program <c>date</c>. 
+   <pre class=screen>
+	<c>#!/bin/bash    
+        # hello_world
+        # version 1.1a
+        # Andrew Newman
+	# created Mon Sep 18 18:41:59 EDT 2006</c>
+        TIME=`date`
+	echo "At $TIME, $USER said 'hello world'"
+	exit 0 </pre>
+ <br>
+ <p><b>We will work together on a script to search a GPS station list for stations within a certain range. </b><br>     
+ Here is the final version of <a href=Intro_Unix/lfilesearch>lfilesearch</a>, which was built interactively. <br>
+ This was further modified, with additional options and renamed from <c>nearbyGPS</c>.
+ <br><br>
+ <p><b>A few example scripts</b> <r>(depricated)</r><br>     
+      <UL>
+      <li><a href="Intro_Unix/define.html">define</a>: a google-based dictionary 
+      <li><a href="Intro_Unix/myradar.html">myradar</a>: a program that calls up a browser to display the current default radar
+      <li><a href="Intro_Unix/myforecast.html">myforecast</a>: weather forecast using default or user-defined input (text if screen not available)
+    </UL>
+   <center>
+   <hr width=800><!-- ________________________________________________________ -->
+   <font size=2><a href=https://avnewman.github.io>Home</a> |  
+   <font size=2 color=darkblue> <I>anewman<IMG src=pics/at.gif>gatech.edu</I></font> |
+   <font size=2 color=darkblue><I> Updated: 
+Thu Aug  1 09:19:44 EDT 2013
+   </I></font>
+   </center>
+</td> </tr> </table>
+</center>
+<script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); </script>
+<script type="text/javascript"> var pageTracker = _gat._getTracker("UA-6112466-2"); pageTracker._trackPageview(); </script>
+
+</body>
+</html>

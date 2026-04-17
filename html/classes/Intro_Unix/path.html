@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- AVN;  Tue Sep 19 12:46:24 EDT 2006 --> 
+
+<HTML><HEAD><TITLE>PATH: for the BASH SHELL</TITLE>
+<base href="http://geophysics.eas.gatech.edu/people/anewman/">
+<link rel="stylesheet" href="css/simple.css" type="text/css">
+</HEAD>
+<BODY bgColor=lightyellow>
+<center>
+<TABLE width=98% border=0 cellpadding=10><TBODY>
+  <TR> <TD align=right>
+     <font size=-1><a href="javascript:window.close()">[X] close window</a></font>
+  </TD></TR>
+<TR> <TD align=Left>
+   <h1>PATH:</h1> <font size=-1><red>(As pertaining to the bash shell and shell scripting)</font>
+  <p>
+    PATH: is a shell variable that tells the shell where to look for programs.  The variable is first defined
+    by default files '<c>/etc/bash.bashrc</c>' and '<c>/etc/bash.bashrc.local</c>' (if present), and is optionally refined or replaced
+    in '<c>~/.bashrc</c>'.
+  <p>
+    You can determine what your path contians simply by displaying the variable using <c>echo</c>:
+    <pre class=screen>% echo $PATH
+    .:/home/anewman/bin:/usr/local/bin:/opt/bin:/usr/bin:/usr/X11R6/bin:/bin </pre>
+    This example first looks in '<c>.</c>' (current directory), then '<c>/home/anewman/bin</c>', '<c>/usr/local/bin</c>', and so on...
+    If you have multiple versions of the same program, it will run the one that it finds first in the list.
+  <p>
+  You can add directories by issuing the below commands on the command-line, or by putting it '<c>~/.bashrc</c>' or pertinent shell script:
+  <pre class=screen>% export PATH=/new/directory:$PATH  <c> # adds /new/directory to front</c>
+% export PATH=$PATH:/new/directory  <c> # adds /new/directory at end</c></pre>
+
+<p>For more information <c>man path</c>.
+  </TD></TR>
+  <TR> <TD align=right>
+  <font size=-1>Last Modified:
+Tue Sep 19 13:32:04 EDT 2006
+  </font>
+  </TD></TR>
+</TBODY></TABLE>
+</FORM>
+</center>
+<script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); </script>
+<script type="text/javascript"> var pageTracker = _gat._getTracker("UA-6112466-2"); pageTracker._trackPageview(); </script>
+</BODY></HTML>
