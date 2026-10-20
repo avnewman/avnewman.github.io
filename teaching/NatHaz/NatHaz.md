@@ -22,7 +22,7 @@ header:
 excerpt: "identify, quantify, understand, mitigate"
 ---
 
-**Spring 2026**
+**Spring 2027**
 
 Most course material will be made available through the [Course Canvas Page](https://gatech.instructure.com/courses/520256)
 
