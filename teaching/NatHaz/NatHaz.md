@@ -7,7 +7,7 @@ permalink: /teaching/NatHaz/
 classes: wide
 sidebar:
   nav: "main"
-
+# MoSE 1224
 header:
   overlay_color: "#000"
   overlay_filter: "0.2"   # opacity of overlay_color
@@ -17,7 +17,7 @@ header:
   caption: "Photo credit: [NOAA Coastal Hazards](https://www.tidesandcurrents.noaa.gov/coastal_hazards.html)"
   actions:
     - label: "Syllabus"
-      url: "teaching/NatHaz/Syllabus_NatHaz_Spring2026.pdf"
+      url: "teaching/NatHaz/Syllabus_NatHaz_Spring2027.pdf"
 # caption: "Photo credit: [Max Rive Photography](https://maxrivephotography.com/)"
 excerpt: "identify, quantify, understand, mitigate"
 ---
